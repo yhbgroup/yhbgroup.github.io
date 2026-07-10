@@ -1,0 +1,452 @@
+[
+  {
+    "id": "global-cmip6-pm25-calibrated",
+    "category": "data",
+    "title": "全球1°CMIP6的PM2.5数据（逐年校准数据）",
+    "shortTitle": "全球CMIP6 PM2.5逐年校准数据",
+    "description": "提供全球1°空间分辨率下的CMIP6情景PM2.5浓度数据，可用于未来空气污染暴露评估、健康风险评估和情景比较分析。",
+    "updateNote": "支持按年份、SSP情景和CMIP6模式填写问卷星申请表。",
+    "filters": {
+      "years": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028",
+        "2029",
+        "2030",
+        "2031",
+        "2032",
+        "2033",
+        "2034",
+        "2035",
+        "2036",
+        "2037",
+        "2038",
+        "2039",
+        "2040",
+        "2041",
+        "2042",
+        "2043",
+        "2044",
+        "2045",
+        "2046",
+        "2047",
+        "2048",
+        "2049",
+        "2050",
+        "2051",
+        "2052",
+        "2053",
+        "2054"
+      ],
+      "provinces": [
+        "全球"
+      ],
+      "scenarios": [
+        "SSP1",
+        "SSP2",
+        "SSP3",
+        "SSP5"
+      ],
+      "models": [
+        "按申请说明"
+      ],
+      "formats": [
+        "GeoTIFF"
+      ]
+    },
+    "tableMeta": {
+      "yearRange": "2015-2054",
+      "dataFormat": "GeoTIFF",
+      "spatialResolution": "全球",
+      "temporalResolution": "年",
+      "dimensions": "PM2.5浓度、年份、SSP情景、CMIP6模式",
+      "releaseDate": "按申请提供",
+      "developer": " "
+    },
+    "details": [
+      {
+        "label": "关于数据",
+        "value": "该数据提供全球1°空间分辨率下的CMIP6情景PM2.5浓度数据，可用于未来空气污染暴露评估、健康风险评估和情景比较分析。原始数据主要包括逐模式、逐情景、逐年份的校准栅格数据。文件主要为GeoTIFF（.tif）格式，已发布至SciDB平台。"
+      },
+      {
+        "label": "时间范围",
+        "value": "2015-2054年"
+      },
+      {
+        "label": "空间范围",
+        "value": "全球，1°空间分辨率"
+      },
+      {
+        "label": "筛选维度",
+        "value": "年份、SSP情景、CMIP6模式"
+      },
+      {
+        "label": "数据来源",
+        "value": "SciDB数据平台"
+      },
+      {
+        "label": "补充说明",
+        "value": "文件命名格式示例为adjcon_模式名_ssp情景_年份.tif，baseline浓度为2015年三年滑动平均浓度。"
+      }
+    ]
+  },
+  {
+    "id": "global-cmip6-pm25-statistics",
+    "category": "data",
+    "title": "全球1°CMIP6的PM2.5数据（多模式统计数据）",
+    "shortTitle": "全球CMIP6 PM2.5多模式统计数据",
+    "description": "基于多个CMIP6模式结果整理得到PM2.5多模式统计数据，提供不同SSP情景和关键年份下的统计结果。",
+    "updateNote": "支持按年份、SSP情景和统计类型填写问卷星申请表。",
+    "filters": {
+      "years": [
+        "2015",
+        "2020",
+        "2025",
+        "2030",
+        "2035",
+        "2040",
+        "2045",
+        "2050"
+      ],
+      "provinces": [
+        "全球"
+      ],
+      "scenarios": [
+        "SSP1",
+        "SSP2",
+        "SSP3",
+        "SSP5"
+      ],
+      "models": [
+        "多模式平均值",
+        "中位数",
+        "最小值",
+        "最大值",
+        "标准差"
+      ],
+      "formats": [
+        "GeoTIFF"
+      ]
+    },
+    "tableMeta": {
+      "yearRange": "2015、2020、2025、2030、2035、2040、2045、2050",
+      "dataFormat": "GeoTIFF",
+      "spatialResolution": "全球",
+      "temporalResolution": "5年",
+      "dimensions": "PM2.5浓度、年份、SSP情景、统计类型",
+      "releaseDate": "按申请提供",
+      "developer": " "
+    },
+    "details": [
+      {
+        "label": "关于数据",
+        "value": "该数据为基于多个CMIP6模式结果整理得到的PM2.5多模式统计数据，提供不同SSP情景和关键年份下的统计结果。数据包括多模式平均值、中位数、最小值、最大值和标准差等统计类型。文件主要为GeoTIFF（.tif）格式，已发布至SciDB平台。"
+      },
+      {
+        "label": "时间范围",
+        "value": "2015、2020、2025、2030、2035、2040、2045、2050"
+      },
+      {
+        "label": "空间范围",
+        "value": "全球，1°空间分辨率"
+      },
+      {
+        "label": "筛选维度",
+        "value": "年份、SSP情景、统计类型"
+      },
+      {
+        "label": "数据来源",
+        "value": "SciDB数据平台"
+      },
+      {
+        "label": "补充说明",
+        "value": "文件命名格式示例为统计类型_adjcon_ssp情景_年份.tif。"
+      }
+    ]
+  },
+  {
+    "id": "global-pm25-deaths-2015-2050",
+    "category": "data",
+    "title": "全球2015-2050年多种情景和模型下归因于PM2.5污染的死亡数据",
+    "shortTitle": "全球PM2.5归因死亡数据",
+    "description": "展示全球不同情景和模型下归因于PM2.5污染的死亡负担变化，支持空气污染健康影响评估和未来情景政策分析。",
+    "updateNote": "支持按国家或地区、SSP情景、年份和结果类型填写问卷星申请表。",
+    "filters": {
+      "years": [
+        "2000",
+        "2015",
+        "2030",
+        "2050"
+      ],
+      "provinces": [
+        "全球",
+        "国家",
+        "区域"
+      ],
+      "scenarios": [
+        "SSP1",
+        "SSP2",
+        "SSP3",
+        "SSP5"
+      ],
+      "models": [
+        "国家和地区死亡结果",
+        "驱动因素解构",
+        "栅格死亡数据"
+      ],
+      "formats": [
+        "Excel",
+        "GeoTIFF"
+      ]
+    },
+    "tableMeta": {
+      "yearRange": "2000、2015、2030、2050",
+      "dataFormat": "Excel、GeoTIFF",
+      "spatialResolution": "全球 / 区域",
+      "temporalResolution": "15/20年",
+      "dimensions": "国家/区域、SSP情景、年份、PM2.5归因死亡、栅格死亡、驱动因素、预测不确定性",
+      "releaseDate": "按申请提供",
+      "developer": " "
+    },
+    "details": [
+      {
+        "label": "关于数据",
+        "value": "该数据用于展示全球不同情景和模型下归因于PM2.5污染的死亡负担变化，可支持空气污染健康影响评估、SDG3.9目标相关研究和未来情景政策分析。数据文件包括国家和地区尺度死亡结果、驱动因素解构分析结果以及栅格尺度死亡数据。"
+      },
+      {
+        "label": "时间范围",
+        "value": "2000、2015、2030、2050年"
+      },
+      {
+        "label": "空间范围",
+        "value": "全球/区域"
+      },
+      {
+        "label": "筛选维度",
+        "value": "国家/地区、ISO代码、SSP情景、年份、驱动因素、预测不确定性"
+      },
+      {
+        "label": "数据来源",
+        "value": "GitHub共享数据仓库"
+      },
+      {
+        "label": "补充说明",
+        "value": "Countryandregionspecificdeaths.xlsx用于提供国家和地区尺度的PM2.5归因死亡结果；Decomposition.xlsx用于提供死亡变化的分解分析结果；Griddeddeaths.rar中包含栅格尺度死亡数据。"
+      }
+    ]
+  },
+  {
+    "id": "china-health-impact-model-comparison",
+    "category": "data",
+    "title": "多个模型评估的中国健康影响数据",
+    "shortTitle": "中国多模型健康影响数据",
+    "description": "整理多个暴露响应模型下中国区域的健康影响评估结果，用于比较不同模型下中国区域健康影响估计的差异。",
+    "updateNote": "支持按地区、暴露响应函数、年份、疾病和年龄段填写问卷星申请表。",
+    "filters": {
+      "years": [
+        "2000",
+        "2001",
+        "2002",
+        "2003",
+        "2004",
+        "2005",
+        "2006",
+        "2007",
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020"
+      ],
+      "provinces": [
+        "中国",
+        "省级",
+        "地级市"
+      ],
+      "diseases": [
+        "IHD",
+        "STROKE",
+        "COPD",
+        "LC",
+        "LRI",
+        "DM2"
+      ],
+      "models": [
+        "GEMM",
+        "IER2015",
+        "IER2016",
+        "IER2017",
+        "MR-BRT-2019",
+        "MR-BRT-2021",
+        "MR-BRT-2023"
+      ],
+      "formats": [
+        "CSV"
+      ]
+    },
+    "tableMeta": {
+      "yearRange": "2000-2020",
+      "dataFormat": "CSV",
+      "spatialResolution": "中国 / 省级 / 地级市",
+      "temporalResolution": "年",
+      "dimensions": "PM2.5归因死亡、地区、暴露响应函数、年份、疾病、年龄段",
+      "releaseDate": "按申请提供",
+      "developer": " "
+    },
+    "details": [
+      {
+        "label": "关于数据",
+        "value": "该数据用于整理多个暴露响应模型下中国区域的健康影响评估结果。数据覆盖2000-2020年，包含省级行政区和地级市尺度信息，并按照年份、疾病、年龄段和暴露响应函数等维度记录健康影响结果，可用于比较不同模型下中国区域健康影响估计的差异。"
+      },
+      {
+        "label": "时间范围",
+        "value": "2000-2020年"
+      },
+      {
+        "label": "空间范围",
+        "value": "中国，包含省级行政区和地级市尺度"
+      },
+      {
+        "label": "筛选维度",
+        "value": "地区、暴露响应函数、年份、疾病、年龄段"
+      },
+      {
+        "label": "补充说明",
+        "value": "暴露响应函数包括GEMM、IER2015、IER2016、IER2017、MR-BRT-2019、MR-BRT-2021和MR-BRT-2023。"
+      }
+    ]
+  },
+  {
+    "id": "pm25-health-risk-tool-v3",
+    "category": "software",
+    "title": "PM2.5污染健康风险评估工具V3.0",
+    "shortTitle": "PM2.5健康风险评估工具",
+    "description": "基于ArcGIS的PM2.5和O3污染健康风险评估工具，用于空间化归因死亡人数估算。",
+    "registrationNumber": "",
+    "updateNote": "填写问卷星申请表后获取软件资源。",
+    "filters": {
+      "formats": [
+        "ArcGIS工具箱"
+      ]
+    },
+    "tableMeta": {
+      "yearRange": "V3.0",
+      "dataFormat": "ArcGIS工具箱",
+      "spatialResolution": "PM2.5和O3污染健康风险评估、空间化归因死亡人数估算",
+      "temporalResolution": "持续维护",
+      "dimensions": "DAPP空间化计算、COPD归因死亡空间化计算、暴露响应函数选择、置信区间计算、结果输出",
+      "releaseDate": " ",
+      "developer": "中国海洋大学大气环境政策研究团队"
+    },
+    "details": [
+      {
+        "label": "关于软件",
+        "value": "PM2.5污染健康风险评估工具V3.0是ArcGIS插件型健康风险评估工具。软件在保留PM2.5污染健康风险评估功能的基础上，进一步更新了PM2.5暴露–响应函数版本，并补充了O3污染健康风险评估功能，可用于基于空间栅格数据开展PM2.5和O3污染导致的归因死亡人数估算。"
+      },
+      {
+        "label": "适用范围",
+        "value": "PM2.5污染健康风险评估；O3污染健康风险评估；区域或栅格尺度归因死亡人数计算；环境风险评估、公共健康效应分析、空间化健康负担制图和环境政策制定辅助分析。"
+      },
+      {
+        "label": "运行环境",
+        "value": "基于ArcGIS软件开发，适用于ArcGIS 10系列版本；软件无需单独安装，可在ArcToolbox中添加工具箱后运行，也可直接在ArcGIS目录中打开插件使用。"
+      },
+      {
+        "label": "输入数据",
+        "value": "PM2.5或O3污染物浓度栅格数据、人口分布栅格数据、矢量边界数据、年龄结构表、疾病死亡率表、暴露–响应函数文件。"
+      },
+      {
+        "label": "输出结果",
+        "value": "研究区域总归因死亡人数结果文件，按污染物、暴露–响应函数、置信区间、疾病类型和年龄组计算的归因死亡人数结果文件，以及可选的模型过程文件。"
+      },
+      {
+        "label": "补充说明",
+        "value": "软件基于比较风险评估框架进行健康影响估算。PM2.5模块支持IER、GEMM和MR-BRT三类暴露–响应函数，其中IER包括IER2015、IER2016、IER2017，GEMM包括GEMM(NoCN)和GEMM(YesCN)，MR-BRT包括MR-BRT-2019、MR-BRT-2021、MR-BRT-2023。PM2.5健康风险评估可纳入缺血性心脏病、中风、慢性阻塞性肺疾病、肺癌、下呼吸道感染、Ⅱ型糖尿病、阿尔茨海默病和其他痴呆症、非传染性疾病和下呼吸道感染等疾病。O3模块采用O3-COPD-MR-BRT-2021暴露–响应函数，主要评估O3暴露导致的慢性阻塞性肺疾病归因死亡人数。软件支持Middle、LowerCI和UpperCI三类置信区间计算，并支持结果文件和过程文件输出，便于结果检查和后续分析。"
+      }
+    ],
+    "references": [
+      {
+        "id": "pm25-health-risk-tool-v3-nature-communications-2020",
+        "title": "Stronger policy required to substantially reduce deaths from PM2.5 pollution in China",
+        "authors": "Yue H, He C, Huang Q, et al.",
+        "year": "2020",
+        "journal": "Nature Communications",
+        "citationGb": "Yue H, He C, Huang Q, et al. Stronger policy required to substantially reduce deaths from PM2.5 pollution in China[J]. Nature Communications, 2020, 11(1): 1462."
+      }
+    ]
+  },
+  {
+    "id": "air-pollution-health-impact-analysis-v2",
+    "category": "software",
+    "title": "大气污染健康影响分析软件V2.0",
+    "shortTitle": "大气污染健康影响分析软件",
+    "description": "包含空气污染健康影响评估工具与目标浓度设置辅助工具两大模块，支持健康风险定量评估、驱动因素分解和目标浓度设置。",
+    "registrationNumber": "2026SR0621781",
+    "updateNote": "填写问卷星申请表后获取软件资源。",
+    "filters": {
+      "formats": [
+        "Windows可执行程序"
+      ]
+    },
+    "tableMeta": {
+      "yearRange": "V2.0",
+      "dataFormat": "Windows可执行程序",
+      "spatialResolution": "PM2.5和O3污染健康影响评估、驱动因素分解、目标浓度设置",
+      "temporalResolution": "持续维护",
+      "dimensions": "健康风险定量评估、驱动因素解构、目标浓度反推、不确定性区间计算、多地区批处理",
+      "releaseDate": "2026-05-26",
+      "developer": "岳桓陛、殷硕硕、张艺驰"
+    },
+    "details": [
+      {
+        "label": "关于软件",
+        "value": "大气污染健康影响分析软件V2.0主要包含空气污染健康影响评估工具与目标浓度设置辅助工具两大模块。软件可用于量化评估PM2.5或O3暴露对公共健康的潜在影响，解析驱动健康风险变化的关键因素，并为环境政策制定提供目标浓度建议。"
+      },
+      {
+        "label": "运行环境",
+        "value": "打开大气污染健康影响分析软件V2.0.exe文件即可运行。"
+      },
+      {
+        "label": "输入数据",
+        "value": "人口数据表、年龄结构表、疾病死亡率表、PM2.5或O3暴露浓度表；目标浓度设置模块可使用内置国家/地区和中国地级市基础数据，或导入自定义情景文件。"
+      },
+      {
+        "label": "输出结果",
+        "value": "健康影响估算结果表、驱动因素分解结果图表、推荐目标浓度及其不确定性范围，以及可选的过程文件。"
+      },
+      {
+        "label": "补充说明",
+        "value": "PM2.5支持IER、GEMM和MR-BRT三类暴露响应函数，其中IER包括IER2015、IER2016、IER2017，GEMM包括YesCN和NoCN版本，MR-BRT包括2019、2021、2023版本；O3使用MR-BRT-2021作为暴露响应函数。"
+      }
+    ],
+    "references": [
+      {
+        "id": "air-pollution-health-impact-analysis-v2-registration",
+        "title": "大气污染健康影响分析软件 V2.0",
+        "authors": "岳桓陛",
+        "year": "2026",
+        "citationGb": "岳桓陛. 大气污染健康影响分析软件 V2.0: 2026SR0621781[CP]. 2026-05-26.",
+        "citationApa6": "岳桓陛. (2026). 大气污染健康影响分析软件V2.0 (登记号: 2026SR0621781) [计算机软件]."
+      }
+    ]
+  }
+]
