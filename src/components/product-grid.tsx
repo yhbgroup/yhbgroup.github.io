@@ -163,7 +163,7 @@ export function ProductGrid({
                           products={products}
                           productId={product.id}
                           buttonLabel={actionLabel}
-                          className="table-action table-action--primary"
+                          className="table-action"
                         />
                         <button
                           type="button"

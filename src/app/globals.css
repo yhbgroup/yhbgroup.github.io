@@ -478,10 +478,6 @@ button {
   color: var(--accent-strong);
 }
 
-.table-action--primary {
-  background: #f3f6fb;
-}
-
 .dialog-backdrop {
   position: fixed;
   inset: 0;
