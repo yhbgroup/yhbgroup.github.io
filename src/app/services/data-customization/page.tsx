@@ -23,7 +23,7 @@ export default async function DataCustomizationPage() {
           <div className="service-copy">
             <p>
               团队长期从事大气污染与公共健康效应研究，相关成果发表于 Nature Communications
-              等期刊。基于暴露-响应模型体系，可针对以下场景提供定制数据：
+              等期刊。可针对以下场景提供定制数据：
             </p>
             <ul className="process-list">
               <li>空气质量健康影响评估</li>
