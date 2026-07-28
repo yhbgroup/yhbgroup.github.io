@@ -17,7 +17,6 @@ type ProductGridProps = {
     spatialResolution: string;
     temporalResolution: string;
     dimensions: string;
-    developer: string;
   };
 };
 
@@ -28,7 +27,6 @@ const defaultColumnLabels = {
   spatialResolution: "空间范围",
   temporalResolution: "时间分辨率",
   dimensions: "主要维度",
-  developer: "开发者",
 };
 
 function formatYearRange(yearRange: string) {
@@ -124,9 +122,8 @@ export function ProductGrid({
                   {columnLabels.dataFormat ? <th>{columnLabels.dataFormat}</th> : null}
                   <th>{columnLabels.spatialResolution}</th>
                   <th>{columnLabels.temporalResolution}</th>
-                  <th>{columnLabels.dimensions}</th>
-                  <th>{columnLabels.developer}</th>
-                  <th>操作</th>
+                  <th className="catalog-table__dimensions-cell">{columnLabels.dimensions}</th>
+                  <th className="catalog-table__actions-cell">操作</th>
                 </tr>
               </thead>
               <tbody>
@@ -146,11 +143,10 @@ export function ProductGrid({
                       <ChemicalText text={product.tableMeta.spatialResolution} />
                     </td>
                     <td>{product.tableMeta.temporalResolution}</td>
-                    <td>
+                    <td className="catalog-table__dimensions-cell">
                       <ChemicalText text={product.tableMeta.dimensions} />
                     </td>
-                    <td>{product.tableMeta.developer}</td>
-                    <td>
+                    <td className="catalog-table__actions-cell">
                       <div className="catalog-actions">
                         <button
                           type="button"
@@ -268,9 +264,14 @@ export function ProductGrid({
                           </p>
                         </div>
                       ) : null}
+                      {reference.note ? (
+                        <p>
+                          <ChemicalText text={reference.note} />
+                        </p>
+                      ) : null}
                       {reference.url ? (
                         <a className="text-link" href={reference.url} target="_blank" rel="noreferrer">
-                          查看来源
+                          查看文献
                         </a>
                       ) : null}
                     </article>

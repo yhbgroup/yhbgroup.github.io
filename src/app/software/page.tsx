@@ -38,7 +38,6 @@ export default async function SoftwarePlatformPage() {
             spatialResolution: "适用范围",
             temporalResolution: "维护状态",
             dimensions: "主要功能",
-            developer: "开发者",
           }}
         />
       </div>

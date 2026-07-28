@@ -71,8 +71,7 @@
       "spatialResolution": "全球",
       "temporalResolution": "年",
       "dimensions": "PM2.5浓度、年份、SSP情景、CMIP6模式",
-      "releaseDate": "按申请提供",
-      "developer": " "
+      "releaseDate": "按申请提供"
     },
     "details": [
       {
@@ -94,6 +93,19 @@
       {
         "label": "补充说明",
         "value": "文件命名格式示例为adjcon_模式名_ssp情景_年份.tif，baseline浓度为2015年三年滑动平均浓度。"
+      }
+    ],
+    "references": [
+      {
+        "id": "global-cmip6-pm25-calibrated-nature-communications-2024",
+        "title": "Substantially reducing global PM2.5-related deaths under SDG3.9 requires better air pollution control and healthcare",
+        "authors": "Yue H, He C, Huang Q, Zhang D, Shi P, Moallemi E A, et al.",
+        "year": "2024",
+        "journal": "Nature Communications",
+        "doi": "10.1038/s41467-024-46969-3",
+        "url": "https://www.nature.com/articles/s41467-024-46969-3",
+        "citationGb": "Yue H, He C, Huang Q, Zhang D, Shi P, Moallemi E A, et al. Substantially reducing global PM2.5-related deaths under SDG3.9 requires better air pollution control and healthcare[J]. Nature Communications, 2024, 15(1): 2729.",
+        "citationApa6": "Yue, H., He, C., Huang, Q., Zhang, D., Shi, P., Moallemi, E. A., . . . Bryan, B. A. (2024). Substantially reducing global PM2.5-related deaths under SDG3.9 requires better air pollution control and healthcare. Nature Communications, 15(1), 2729."
       }
     ]
   },
@@ -141,8 +153,7 @@
       "spatialResolution": "全球",
       "temporalResolution": "5年",
       "dimensions": "PM2.5浓度、年份、SSP情景、统计类型",
-      "releaseDate": "按申请提供",
-      "developer": " "
+      "releaseDate": "按申请提供"
     },
     "details": [
       {
@@ -164,6 +175,19 @@
       {
         "label": "补充说明",
         "value": "文件命名格式示例为统计类型_adjcon_ssp情景_年份.tif。"
+      }
+    ],
+    "references": [
+      {
+        "id": "global-cmip6-pm25-statistics-nature-communications-2024",
+        "title": "Substantially reducing global PM2.5-related deaths under SDG3.9 requires better air pollution control and healthcare",
+        "authors": "Yue H, He C, Huang Q, Zhang D, Shi P, Moallemi E A, et al.",
+        "year": "2024",
+        "journal": "Nature Communications",
+        "doi": "10.1038/s41467-024-46969-3",
+        "url": "https://www.nature.com/articles/s41467-024-46969-3",
+        "citationGb": "Yue H, He C, Huang Q, Zhang D, Shi P, Moallemi E A, et al. Substantially reducing global PM2.5-related deaths under SDG3.9 requires better air pollution control and healthcare[J]. Nature Communications, 2024, 15(1): 2729.",
+        "citationApa6": "Yue, H., He, C., Huang, Q., Zhang, D., Shi, P., Moallemi, E. A., . . . Bryan, B. A. (2024). Substantially reducing global PM2.5-related deaths under SDG3.9 requires better air pollution control and healthcare. Nature Communications, 15(1), 2729."
       }
     ]
   },
@@ -208,8 +232,7 @@
       "spatialResolution": "全球 / 区域",
       "temporalResolution": "15/20年",
       "dimensions": "国家/区域、SSP情景、年份、PM2.5归因死亡、栅格死亡、驱动因素、预测不确定性",
-      "releaseDate": "按申请提供",
-      "developer": " "
+      "releaseDate": "按申请提供"
     },
     "details": [
       {
@@ -241,9 +264,9 @@
         "year": "2024",
         "journal": "Nature Communications",
         "doi": "10.1038/s41467-024-46969-3",
-        "url": "https://doi.org/10.1038/s41467-024-46969-3",
-        "citationGb": "Yue H, He C, Huang Q, et al. Substantially reducing global PM2.5-related deaths under SDG3.9 requires better air pollution control and healthcare[J]. Nature Communications, 2024, 15(1): 2729.",
-        "citationApa6": "Yue, H., He, C., Huang, Q., Zhang, D., Shi, P., Moallemi, E. A., . . . Bryan, B. A. 2024. Substantially reducing global PM2.5-related deaths under SDG3.9 requires better air pollution control and healthcare. Nature Communications, 15(1), 2729.",
+        "url": "https://www.nature.com/articles/s41467-024-46969-3",
+        "citationGb": "Yue H, He C, Huang Q, Zhang D, Shi P, Moallemi E A, et al. Substantially reducing global PM2.5-related deaths under SDG3.9 requires better air pollution control and healthcare[J]. Nature Communications, 2024, 15(1): 2729.",
+        "citationApa6": "Yue, H., He, C., Huang, Q., Zhang, D., Shi, P., Moallemi, E. A., . . . Bryan, B. A. (2024). Substantially reducing global PM2.5-related deaths under SDG3.9 requires better air pollution control and healthcare. Nature Communications, 15(1), 2729.",
         "risText": "TY  - JOUR\nAU  - Yue, Huanbi\nAU  - He, Chunyang\nAU  - Huang, Qingxu\nAU  - Zhang, Da\nAU  - Shi, Peijun\nAU  - Moallemi, Enayat A.\nAU  - Xu, Fangjin\nAU  - Yang, Yang\nAU  - Qi, Xin\nAU  - Ma, Qun\nAU  - Bryan, Brett A.\nPY  - 2024\nDA  - 2024/03/28\nTI  - Substantially reducing global PM2.5-related deaths under SDG3.9 requires better air pollution control and healthcare\nJO  - Nature Communications\nSP  - 2729\nVL  - 15\nIS  - 1\nAB  - The United Nations’ Sustainable Development Goal (SDG) 3.9 calls for a substantial reduction in deaths attributable to PM2.5 pollution (DAPP). However, DAPP projections vary greatly and the likelihood of meeting SDG3.9 depends on complex interactions among environmental, socio-economic, and healthcare parameters. We project potential future trends in global DAPP considering the joint effects of each driver (PM2.5 concentration, death rate of diseases, population size, and age structure) and assess the likelihood of achieving SDG3.9 under the Shared Socioeconomic Pathways (SSPs) as quantified by the Scenario Model Intercomparison Project (ScenarioMIP) framework with simulated PM2.5 concentrations from 11 models. We find that a substantial reduction in DAPP would not be achieved under all but the most optimistic scenario settings. Even the development aligned with the Sustainability scenario (SSP1-2.6), in which DAPP was reduced by 19%, still falls just short of achieving a substantial (≥20%) reduction by 2030. Meeting SDG3.9 calls for additional efforts in air pollution control and healthcare to more aggressively reduce DAPP.\nSN  - 2041-1723\nUR  - https://doi.org/10.1038/s41467-024-46969-3\nDO  - 10.1038/s41467-024-46969-3\nID  - Yue2024\nER  -"
       }
     ]
@@ -311,8 +334,7 @@
       "spatialResolution": "中国 / 省级 / 地级市",
       "temporalResolution": "年",
       "dimensions": "PM2.5归因死亡、地区、暴露响应函数、年份、疾病、年龄段",
-      "releaseDate": "按申请提供",
-      "developer": " "
+      "releaseDate": "按申请提供"
     },
     "details": [
       {
@@ -335,6 +357,13 @@
         "label": "补充说明",
         "value": "暴露响应函数包括GEMM、IER2015、IER2016、IER2017、MR-BRT-2019、MR-BRT-2021和MR-BRT-2023。"
       }
+    ],
+    "references": [
+      {
+        "id": "china-health-impact-model-comparison-paper-in-preparation",
+        "title": "paper in preparation.",
+        "note": "paper in preparation."
+      }
     ]
   },
   {
@@ -355,9 +384,8 @@
       "dataFormat": "ArcGIS工具箱",
       "spatialResolution": "PM2.5和O3污染健康风险评估、空间化归因死亡人数估算",
       "temporalResolution": "持续维护",
-      "dimensions": "DAPP空间化计算、COPD归因死亡空间化计算、暴露响应函数选择、置信区间计算、结果输出",
-      "releaseDate": " ",
-      "developer": "中国海洋大学大气环境政策研究团队"
+      "dimensions": "DAPP空间化计算、暴露响应函数选择、置信区间计算、结果输出",
+      "releaseDate": " "
     },
     "details": [
       {
@@ -389,10 +417,24 @@
       {
         "id": "pm25-health-risk-tool-v3-nature-communications-2020",
         "title": "Stronger policy required to substantially reduce deaths from PM2.5 pollution in China",
-        "authors": "Yue H, He C, Huang Q, et al.",
+        "authors": "Yue H, He C, Huang Q, Yin D, Bryan B A",
         "year": "2020",
         "journal": "Nature Communications",
-        "citationGb": "Yue H, He C, Huang Q, et al. Stronger policy required to substantially reduce deaths from PM2.5 pollution in China[J]. Nature Communications, 2020, 11(1): 1462."
+        "doi": "10.1038/s41467-020-15319-4",
+        "url": "https://www.nature.com/articles/s41467-020-15319-4",
+        "citationGb": "Yue H, He C, Huang Q, Yin D, Bryan B A. Stronger policy required to substantially reduce deaths from PM2.5 pollution in China[J]. Nature Communications, 2020, 11(1): 1462.",
+        "citationApa6": "Yue, H., He, C., Huang, Q., Yin, D., & Bryan, B. A. (2020). Stronger policy required to substantially reduce deaths from PM2.5 pollution in China. Nature Communications, 11(1), 1462."
+      },
+      {
+        "id": "pm25-health-risk-tool-v3-nature-communications-2024",
+        "title": "Substantially reducing global PM2.5-related deaths under SDG3.9 requires better air pollution control and healthcare",
+        "authors": "Yue H, He C, Huang Q, Zhang D, Shi P, Moallemi E A, et al.",
+        "year": "2024",
+        "journal": "Nature Communications",
+        "doi": "10.1038/s41467-024-46969-3",
+        "url": "https://www.nature.com/articles/s41467-024-46969-3",
+        "citationGb": "Yue H, He C, Huang Q, Zhang D, Shi P, Moallemi E A, et al. Substantially reducing global PM2.5-related deaths under SDG3.9 requires better air pollution control and healthcare[J]. Nature Communications, 2024, 15(1): 2729.",
+        "citationApa6": "Yue, H., He, C., Huang, Q., Zhang, D., Shi, P., Moallemi, E. A., . . . Bryan, B. A. (2024). Substantially reducing global PM2.5-related deaths under SDG3.9 requires better air pollution control and healthcare. Nature Communications, 15(1), 2729."
       }
     ]
   },
@@ -415,8 +457,7 @@
       "spatialResolution": "PM2.5和O3污染健康影响评估、驱动因素分解、目标浓度设置",
       "temporalResolution": "持续维护",
       "dimensions": "健康风险定量评估、驱动因素解构、目标浓度反推、不确定性区间计算、多地区批处理",
-      "releaseDate": "2026-05-26",
-      "developer": "岳桓陛、殷硕硕、张艺驰"
+      "releaseDate": "2026-05-26"
     },
     "details": [
       {
@@ -441,6 +482,28 @@
       }
     ],
     "references": [
+      {
+        "id": "air-pollution-health-impact-analysis-v2-nature-communications-2020",
+        "title": "Stronger policy required to substantially reduce deaths from PM2.5 pollution in China",
+        "authors": "Yue H, He C, Huang Q, Yin D, Bryan B A",
+        "year": "2020",
+        "journal": "Nature Communications",
+        "doi": "10.1038/s41467-020-15319-4",
+        "url": "https://www.nature.com/articles/s41467-020-15319-4",
+        "citationGb": "Yue H, He C, Huang Q, Yin D, Bryan B A. Stronger policy required to substantially reduce deaths from PM2.5 pollution in China[J]. Nature Communications, 2020, 11(1): 1462.",
+        "citationApa6": "Yue, H., He, C., Huang, Q., Yin, D., & Bryan, B. A. (2020). Stronger policy required to substantially reduce deaths from PM2.5 pollution in China. Nature Communications, 11(1), 1462."
+      },
+      {
+        "id": "air-pollution-health-impact-analysis-v2-nature-communications-2024",
+        "title": "Substantially reducing global PM2.5-related deaths under SDG3.9 requires better air pollution control and healthcare",
+        "authors": "Yue H, He C, Huang Q, Zhang D, Shi P, Moallemi E A, et al.",
+        "year": "2024",
+        "journal": "Nature Communications",
+        "doi": "10.1038/s41467-024-46969-3",
+        "url": "https://www.nature.com/articles/s41467-024-46969-3",
+        "citationGb": "Yue H, He C, Huang Q, Zhang D, Shi P, Moallemi E A, et al. Substantially reducing global PM2.5-related deaths under SDG3.9 requires better air pollution control and healthcare[J]. Nature Communications, 2024, 15(1): 2729.",
+        "citationApa6": "Yue, H., He, C., Huang, Q., Zhang, D., Shi, P., Moallemi, E. A., . . . Bryan, B. A. (2024). Substantially reducing global PM2.5-related deaths under SDG3.9 requires better air pollution control and healthcare. Nature Communications, 15(1), 2729."
+      },
       {
         "id": "air-pollution-health-impact-analysis-v2-registration",
         "title": "大气污染健康影响分析软件 V2.0",

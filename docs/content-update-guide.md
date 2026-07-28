@@ -99,23 +99,49 @@ public/logo.png
 
 顶部栏图片会按原比例放大并铺满顶部栏，不会被拉伸变形。建议使用横向图片，并尽量压缩到 1MB 以内，方便公网访问。
 
-## 团队成员字段说明
+## 团队介绍字段说明
 
+`src/content/team.json` 中包含 `intro` 和 `members` 两部分。
+
+- `intro.title`：团队介绍标题。
+- `intro.paragraphs`：团队介绍正文，每个数组项是一段文字。
+- `members`：团队成员列表。
 - `name`：成员姓名。
 - `institution`：所在单位。
 - `role`：成员角色，可不填。
 - `photoUrl`：照片路径。照片建议放在 `public/team/`，路径写成 `/team/文件名.jpg`。
-- `description`：成员简介，可不填。
+- `description`：成员简介，可写一段字符串，也可写成多段文字数组。
+- `links`：成员链接列表，可不填。`label` 是页面显示的链接前缀，`text` 是页面显示的可点击文本，`href` 是实际跳转地址。
 
 ## 新增团队成员模板
 
 ```json
 {
-  "name": "成员姓名",
-  "institution": "所在单位",
-  "role": "成员角色",
-  "photoUrl": "/team/member-photo.jpg",
-  "description": "成员简介。"
+  "intro": {
+    "title": "团队简介",
+    "paragraphs": [
+      "团队介绍正文。"
+    ]
+  },
+  "members": [
+    {
+      "name": "成员姓名",
+      "institution": "所在单位",
+      "role": "成员角色",
+      "photoUrl": "/team/member-photo.jpg",
+      "description": [
+        "成员简介第一段。",
+        "成员简介第二段。"
+      ],
+      "links": [
+        {
+          "label": "个人主页：",
+          "text": "https://example.com",
+          "href": "https://example.com"
+        }
+      ]
+    }
+  ]
 }
 ```
 
@@ -140,8 +166,7 @@ public/logo.png
     "spatialResolution": "全球",
     "temporalResolution": "年",
     "dimensions": "主要维度",
-    "releaseDate": "按申请提供",
-    "developer": "负责人或开发者"
+    "releaseDate": "按申请提供"
   },
   "details": [
     {

@@ -1,8 +1,45 @@
-[
-  {
-    "name": "岳桓陛",
-    "institution": "中国海洋大学",
-    "photoUrl": "/team/yuehuanbi.jpg",
-    "description": "主要围绕环境政策及其公共健康效应、城市化生态环境风险和国土空间规划开展研究。"
-  }
-]
+{
+  "intro": {
+    "title": "团队简介",
+    "paragraphs": [
+      "大气环境政策研究团队聚焦城市大气环境政策目标设置、健康效益评估与环境风险管理，综合地理数据分析、政策评估和流行病学模型等方法，开展面向环境政策和公共健康的交叉研究。"
+    ]
+  },
+  "members": [
+    {
+      "name": "岳桓陛",
+      "institution": "中国海洋大学",
+      "role": "副教授",
+      "photoUrl": "/team/yuehuanbi.jpg",
+      "description": "岳桓陛，男，副教授，甘肃庆阳人。主要基于地理数据分析，政策评估和流行病学模型等跨学科方法，开展城市大气环境政策目标的设置和健康效益研究。先后发表论文十余篇，承担国家自然科学基金，山东省自然科学基金等项目。作为团队带头人入选山东省高等学校优秀青年创新团队（大气环境风险管理创新团队）。担任中国自然资源学会资源持续利用与减灾专业委员会委员，中国环境科学学会减污降碳专业委员会委员等职务。担任《Humanities and Social Sciences Communications》《Regional Sustainability》《Eco-Environment & Health》（SCI 1区）等期刊的编委。截止2026年7月，论文累计被引1300余次，单篇最高被引400余次，H指数12。",
+      "links": [
+        {
+          "label": "ORCID:",
+          "text": "0000-0003-3214-815X",
+          "href": "https://orcid.org/0000-0003-3214-815X"
+        },
+        {
+          "label": "Google Scholar:",
+          "text": "https://scholar.google.com/citations?hl=en&user=6XywYHgAAAAJ",
+          "href": "https://scholar.google.com/citations?hl=en&user=6XywYHgAAAAJ"
+        },
+        {
+          "label": "Research Gate:",
+          "text": "https://www.researchgate.net/profile/Huanbi_Yue2",
+          "href": "https://www.researchgate.net/profile/Huanbi_Yue2"
+        },
+        {
+          "label": "机构主页：",
+          "text": "https://siapa.ouc.edu.cn/2021/0827/c18283a345080/page.htm",
+          "href": "https://siapa.ouc.edu.cn/2021/0827/c18283a345080/page.htm"
+        }
+      ]
+    },
+    {
+      "name": "张艺驰",
+      "institution": "2026级硕士研究生，中国海洋大学",
+      "photoUrl": "/team/zhangyichi.jpg",
+      "description": "张艺驰，女，中共党员，山西晋城人，中国海洋大学国际事务与公共管理学院土地资源管理专业硕士研究生。主要围绕大气污染健康影响评估与环境政策健康效益量化开展研究，重点关注PM2.5污染归因死亡、健康影响估算、政策情景模拟等，具备地理空间分析、模型构建与政策评估能力。以第一作者身份在SCI期刊发表论文1篇，作为核心成员参与国家级大学生创新创业训练计划项目，曾获全国大学生土地整治与生态修复工程创新设计大赛特等奖、“国建杯”全国大学生乡村国土空间价值提升规划设计大赛全国二等奖、“挑战杯”首都大学生课外学术科技作品竞赛二等奖等奖项，曾获评校级三好学生、优秀学生干部、优秀共青团干部、北京市优秀毕业生等荣誉称号。"
+    }
+  ]
+}

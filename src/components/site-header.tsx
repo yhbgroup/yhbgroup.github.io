@@ -19,7 +19,7 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <div className="site-header__inner">
-        <Link href="/data" className="site-header__brand">
+        <Link href="/team" className="site-header__brand">
           <Image
             src="/logo.png"
             alt={`${platformName} 标识`}

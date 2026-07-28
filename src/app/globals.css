@@ -298,8 +298,7 @@ button {
 .service-panel,
 .service-copy,
 .contact-card,
-.contact-note,
-.team-card {
+.contact-note {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--panel);
@@ -410,19 +409,12 @@ button {
   width: 220px;
 }
 
-.catalog-table th:nth-child(6),
-.catalog-table td:nth-child(6) {
-  width: 150px;
+.catalog-table__dimensions-cell {
+  width: 190px;
 }
 
-.catalog-table th:nth-child(8),
-.catalog-table td:nth-child(8) {
-  width: 150px;
-}
-
-.catalog-table th:nth-child(9),
-.catalog-table td:nth-child(9) {
-  width: 112px;
+.catalog-table__actions-cell {
+  width: 130px;
 }
 
 .catalog-table__name {
@@ -927,57 +919,136 @@ button {
   line-height: 1.85;
 }
 
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, max-content));
-  gap: 16px;
-  justify-content: start;
+.page-content--team {
+  width: min(1240px, 100%);
 }
 
-.team-card {
-  overflow: hidden;
-  width: fit-content;
-  max-width: 100%;
-  text-align: center;
+.team-overview {
+  margin-bottom: 28px;
 }
 
-.team-card img {
-  width: auto;
-  height: 360px;
-  max-width: 100%;
-  object-fit: contain;
-  display: block;
-  margin: 12px auto 0;
-}
-
-.team-card div {
-  padding: 14px;
-  max-width: 320px;
-}
-
-.team-card h3 {
-  margin: 0 0 7px;
+.team-overview h2 {
+  margin: 0 0 14px;
   color: #1f292c;
+  font-size: 32px;
+  line-height: 1.25;
+}
+
+.team-overview p {
+  max-width: none;
+  margin: 0;
+  color: #1f2529;
   font-size: 18px;
+  line-height: 1.85;
+  text-align: justify;
 }
 
-.team-card strong {
+.team-section-heading {
+  margin-bottom: 10px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.team-section-heading h2 {
+  margin: 0;
+  color: #1f292c;
+  font-size: 32px;
+  line-height: 1.25;
+}
+
+.team-list {
+  display: grid;
+}
+
+.team-member {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 28px;
+  align-items: stretch;
+  padding: 26px 0;
+}
+
+.team-member:first-child {
+  padding-top: 0;
+}
+
+.team-member__photo {
+  width: 220px;
+  min-height: 260px;
+  height: 100%;
+  background: transparent;
+  overflow: hidden;
+}
+
+.team-member__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
   display: block;
+}
+
+.team-member__header h3 {
+  margin: 0 0 6px;
+  color: #1f292c;
+  font-size: 26px;
+  line-height: 1.25;
+}
+
+.team-member__header p {
+  margin: 0;
   color: var(--accent-strong);
-  text-align: center;
-}
-
-.team-card p {
-  margin: 8px 0 0;
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 1.65;
-  text-align: left;
-}
-
-.team-card__role {
-  color: #37464b;
+  font-size: 17px;
+  line-height: 1.6;
   font-weight: 700;
+}
+
+.team-member__bio {
+  margin-top: 14px;
+}
+
+.team-member__bio p {
+  margin: 0 0 10px;
+  color: #1f2529;
+  font-size: 17px;
+  line-height: 1.85;
+  text-align: justify;
+}
+
+.team-member__bio p:last-child {
+  margin-bottom: 0;
+}
+
+.team-member__links {
+  display: grid;
+  gap: 6px;
+  margin-top: 16px;
+  justify-items: start;
+}
+
+.team-member__links p {
+  display: block;
+  margin: 0;
+  color: #1f2529;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.team-member__links span {
+  font-weight: 700;
+}
+
+.team-member__links a {
+  color: var(--accent-strong);
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.team-member__links a:hover {
+  color: #284f87;
 }
 
 .site-footer {
@@ -1078,19 +1149,15 @@ button {
     text-align: left;
   }
 
-  .team-grid {
+  .team-member {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
 
-  .team-card {
-    width: 100%;
-  }
-
-  .team-card img {
-    width: auto;
-    max-width: 100%;
-    height: min(360px, 90vw);
-    margin: 0 auto;
+  .team-member__photo {
+    width: 220px;
+    min-height: 260px;
+    height: 100%;
   }
 
   .dialog-backdrop {

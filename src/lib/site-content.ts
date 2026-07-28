@@ -16,6 +16,7 @@ export type NavGroup = {
 };
 
 export const navGroups: NavGroup[] = [
+  { href: "/team", label: "团队介绍" },
   { href: "/data", label: "数据平台" },
   { href: "/software", label: "软件平台" },
   {
@@ -25,7 +26,6 @@ export const navGroups: NavGroup[] = [
       { href: "/services/contact", label: "联系我们" },
     ],
   },
-  { href: "/team", label: "团队介绍" },
 ];
 
 export const externalWorkflowLinks = {
@@ -55,7 +55,6 @@ export type DownloadProduct = {
     temporalResolution: string;
     dimensions: string;
     releaseDate: string;
-    developer: string;
   };
   details: Array<{ label: string; value: string }>;
   references?: SourceReference[];
@@ -69,6 +68,7 @@ export type SourceReference = {
   journal?: string;
   doi?: string;
   url?: string;
+  note?: string;
   citationGb?: string;
   citationApa6?: string;
   risText?: string;
@@ -102,10 +102,40 @@ export type TeamMember = {
   institution: string;
   role?: string;
   photoUrl: string;
-  description?: string;
+  description?: string | string[];
+  links?: Array<{
+    label: string;
+    text?: string;
+    href: string;
+  }>;
 };
 
-export const teamMembers = teamData as TeamMember[];
+export type TeamIntro = {
+  title: string;
+  paragraphs: string[];
+};
+
+export type TeamContent = {
+  intro: TeamIntro;
+  members: TeamMember[];
+};
+
+const defaultTeamIntro: TeamIntro = {
+  title: "团队简介",
+  paragraphs: [
+    "大气环境政策研究团队聚焦城市大气环境政策目标设置、健康效益评估与环境风险管理，综合地理数据分析、政策评估和流行病学模型等方法，开展面向环境政策和公共健康的交叉研究。",
+  ],
+};
+
+const normalizedTeamContent = Array.isArray(teamData)
+  ? {
+      intro: defaultTeamIntro,
+      members: teamData as TeamMember[],
+    }
+  : (teamData as TeamContent);
+
+export const teamIntro = normalizedTeamContent.intro;
+export const teamMembers = normalizedTeamContent.members;
 
 export function getProductById(productId: string) {
   return downloadProducts.find((product) => product.id === productId);

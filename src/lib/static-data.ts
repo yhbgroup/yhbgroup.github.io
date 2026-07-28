@@ -5,9 +5,11 @@ import {
   dataProducts,
   downloadProducts,
   softwareProducts,
+  teamIntro,
   teamMembers,
   type ContactInfo,
   type SitePageContent,
+  type TeamIntro,
   type TeamMember,
 } from "@/lib/site-content";
 
@@ -92,6 +94,10 @@ export function getSitePage(pageKey: string): SitePageContent {
 
 export function getContactInfo(): ContactInfo {
   return contactInfo;
+}
+
+export function getTeamIntro(): TeamIntro {
+  return teamIntro;
 }
 
 export function getActiveAgreement() {

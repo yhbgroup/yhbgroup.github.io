@@ -1,5 +1,5 @@
-import DataPlatformPage from "@/app/data/page";
+import TeamPage from "@/app/team/page";
 
 export default function HomePage() {
-  return <DataPlatformPage />;
+  return <TeamPage />;
 }
