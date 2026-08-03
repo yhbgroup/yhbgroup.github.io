@@ -924,7 +924,9 @@ button {
 }
 
 .team-overview {
+  position: relative;
   margin-bottom: 28px;
+  padding-right: 300px;
 }
 
 .team-overview h2 {
@@ -932,6 +934,26 @@ button {
   color: #1f292c;
   font-size: 32px;
   line-height: 1.25;
+}
+
+.team-overview__content {
+  min-width: 0;
+}
+
+.team-overview__logo {
+  position: absolute;
+  top: 6px;
+  right: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-overview__logo img {
+  width: 190px;
+  height: auto;
+  max-width: 100%;
+  display: block;
 }
 
 .team-overview p {
@@ -1126,6 +1148,16 @@ button {
     padding: 28px 14px 52px;
   }
 
+  .team-overview {
+    padding-right: 0;
+  }
+
+  .team-overview__logo {
+    position: static;
+    justify-content: flex-start;
+    margin-top: 16px;
+  }
+
   .site-footer__inner {
     align-items: stretch;
     flex-direction: column;
@@ -1174,4 +1206,6 @@ button {
     padding-right: 16px;
   }
 }
+
+
 

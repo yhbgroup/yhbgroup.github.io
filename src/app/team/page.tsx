@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+﻿/* eslint-disable @next/next/no-img-element */
 import type { Metadata } from "next";
 import { PageHero } from "@/components/page-hero";
 import { getSitePage, getTeamIntro, getTeamMembers } from "@/lib/static-data";
@@ -24,10 +24,15 @@ export default async function TeamPage() {
 
       <div className="page-content page-content--team">
         <section className="team-overview" aria-labelledby="team-overview-title">
-          <h2 id="team-overview-title">{teamIntro.title}</h2>
-          {teamIntro.paragraphs.map((paragraph) => (
-            <p key={paragraph}>{paragraph}</p>
-          ))}
+          <div className="team-overview__content">
+            <h2 id="team-overview-title">{teamIntro.title}</h2>
+            {teamIntro.paragraphs.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+          </div>
+          <div className="team-overview__logo" aria-hidden="true">
+            <img src="/logo.png" alt="" />
+          </div>
         </section>
 
         <section className="team-section-heading" aria-labelledby="team-members-title">
@@ -76,3 +81,4 @@ export default async function TeamPage() {
     </div>
   );
 }
+
