@@ -10,7 +10,6 @@ type ProductGridProps = {
   products: DownloadProduct[];
   actionLabel?: string;
   title?: string;
-  sidebarTitle?: string;
   columnLabels?: {
     name: string;
     yearRange: string;
@@ -22,7 +21,7 @@ type ProductGridProps = {
 };
 
 const defaultColumnLabels = {
-  name: "清单名称",
+  name: "数据名称",
   yearRange: "年份",
   dataFormat: "数据格式",
   spatialResolution: "空间范围",
@@ -56,7 +55,6 @@ export function ProductGrid({
   products,
   actionLabel = "数据下载",
   title = "共享清单",
-  sidebarTitle = "清单列表",
   columnLabels = defaultColumnLabels,
 }: ProductGridProps) {
   const { language } = useLanguage();
@@ -85,7 +83,13 @@ export function ProductGrid({
       ? "Software Catalog"
       : "Shared Data Catalog"
     : title;
-  const localizedSidebarTitle = isEnglish ? "Catalog" : sidebarTitle;
+  const localizedSidebarTitle = isEnglish
+    ? products[0]?.category === "software"
+      ? "Software List"
+      : "Data List"
+    : products[0]?.category === "software"
+      ? "软件列表"
+      : "数据列表";
   const localizedActionLabel = isEnglish
     ? products[0]?.category === "software"
       ? "Download Software"
@@ -137,15 +141,6 @@ export function ProductGrid({
             <span aria-hidden="true">▾</span>
           </div>
           <div className="catalog-sidebar__group">
-            <p>
-              {isEnglish
-                ? products[0]?.category === "software"
-                  ? "Software"
-                  : "Data"
-                : products[0]?.category === "software"
-                  ? "软件平台"
-                  : "数据平台"}
-            </p>
             {localizedProducts.map((product, index) => (
               <a key={product.id} href={`#${product.id}`}>
                 {index + 1}. <ChemicalText text={product.title} />
@@ -157,7 +152,7 @@ export function ProductGrid({
         <div className="catalog-main">
           <h2>{localizedTitle}</h2>
           <div className="catalog-table-wrap">
-            <table className="catalog-table">
+            <table className={`catalog-table catalog-table--${products[0]?.category || "data"}`}>
               <thead>
                 <tr>
                   <th>{labels.name}</th>
