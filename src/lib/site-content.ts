@@ -1,6 +1,8 @@
 import productsData from "@/content/products.json";
 import resourceLinksData from "@/content/resource-links.json";
 import teamData from "@/content/team.json";
+import { productTranslationsEn, teamContentEn } from "@/content/content-en";
+import type { Language } from "@/lib/i18n";
 
 export const platformName = "YHB Group";
 
@@ -28,9 +30,18 @@ export const navGroups: NavGroup[] = [
   },
 ];
 
-export const externalWorkflowLinks = {
-  customizationSurveyUrl: "https://v.wjx.cn/vm/PbUV4kG.aspx#",
-};
+export const navGroupsEn: NavGroup[] = [
+  { href: "/team", label: "About Us" },
+  { href: "/data", label: "Data Platform" },
+  { href: "/software", label: "Software Platform" },
+  {
+    label: "Services",
+    children: [
+      { href: "/services/data-customization", label: "Data Customization" },
+      { href: "/services/contact", label: "Contact Us" },
+    ],
+  },
+];
 
 export type DownloadProduct = {
   id: string;
@@ -75,7 +86,15 @@ export type SourceReference = {
 };
 
 export const downloadProducts = productsData as DownloadProduct[];
-export const resourceApplicationLinks = resourceLinksData as Record<string, string>;
+
+type LocalizedResourceLink = Record<Language, string>;
+
+export const resourceApplicationLinks = resourceLinksData as Record<string, LocalizedResourceLink>;
+
+export function getResourceApplicationLink(resourceId: string, language: Language) {
+  const links = resourceApplicationLinks[resourceId];
+  return links?.[language] || links?.zh || "#";
+}
 
 export const dataProducts = downloadProducts.filter((product) => product.category === "data");
 export const softwareProducts = downloadProducts.filter((product) => product.category === "software");
@@ -136,6 +155,45 @@ const normalizedTeamContent = Array.isArray(teamData)
 
 export const teamIntro = normalizedTeamContent.intro;
 export const teamMembers = normalizedTeamContent.members;
+
+export function getLocalizedNavGroups(language: Language) {
+  return language === "en" ? navGroupsEn : navGroups;
+}
+
+export function getLocalizedProducts(language: Language, category?: "data" | "software") {
+  const source = category ? downloadProducts.filter((product) => product.category === category) : downloadProducts;
+
+  if (language === "zh") {
+    return source;
+  }
+
+  return source.map((product) => {
+    const translation = productTranslationsEn[product.id];
+    if (!translation) {
+      return product;
+    }
+
+    return {
+      ...product,
+      ...translation,
+      references: product.references?.map((reference) => ({
+        ...reference,
+        ...(translation.references?.[reference.id] || {}),
+      })),
+    } satisfies DownloadProduct;
+  });
+}
+
+export function getLocalizedTeam(language: Language): TeamContent {
+  if (language === "en") {
+    return teamContentEn;
+  }
+
+  return {
+    intro: teamIntro,
+    members: teamMembers,
+  };
+}
 
 export function getProductById(productId: string) {
   return downloadProducts.find((product) => product.id === productId);

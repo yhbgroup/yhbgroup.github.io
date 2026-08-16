@@ -1,17 +1,12 @@
-import Link from "next/link";
+import { LocalizedServicePage } from "@/components/localized-service-page";
 
 export default function LicensingPage() {
-  return (
-    <div className="page-shell">
-      <div className="page-content page-content--service">
-        <article className="agreement-panel">
-          <h1>使用授权</h1>
-          <p>数据、软件和相关资源应按照申请用途使用，并遵守网站数据使用协议。</p>
-          <Link href="/agreement" className="text-link">
-            查看数据使用协议
-          </Link>
-        </article>
-      </div>
-    </div>
-  );
+  return <LocalizedServicePage
+    title={{ zh: "使用授权", en: "Licensing" }}
+    body={{
+      zh: "数据、软件和相关资源应按照申请用途使用，并遵守网站数据使用协议。",
+      en: "Data, software, and related resources must be used for the purpose stated in the application and in accordance with the website's Resource Use Agreement.",
+    }}
+    link={{ href: "/agreement", label: { zh: "查看数据使用协议", en: "View the Resource Use Agreement" } }}
+  />;
 }

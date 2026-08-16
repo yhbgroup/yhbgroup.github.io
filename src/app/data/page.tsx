@@ -13,7 +13,7 @@ export default async function DataPlatformPage() {
   return (
     <div className="page-shell">
       <PageHero
-        title={page.title}
+        title={{ zh: page.title, en: "Data Platform" }}
         subtitle={page.subtitle}
         imageUrl={page.heroImageUrl}
       />

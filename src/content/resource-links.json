@@ -1,8 +1,30 @@
 {
-  "global-cmip6-pm25-calibrated": "https://v.wjx.cn/vm/PCGUAtN.aspx#",
-  "global-cmip6-pm25-statistics": "https://v.wjx.cn/vm/YDyva7q.aspx#",
-  "global-pm25-deaths-2015-2050": "https://v.wjx.cn/vm/QvNfWo0.aspx#",
-  "china-health-impact-model-comparison": "https://v.wjx.cn/vm/QxXze0N.aspx#",
-  "air-pollution-health-impact-analysis-v2": "https://v.wjx.cn/vm/Q0X0NvH.aspx#",
-  "pm25-health-risk-tool-v3": "https://v.wjx.cn/vm/hmkfGEu.aspx#"
+  "global-cmip6-pm25-calibrated": {
+    "zh": "https://v.wjx.cn/vm/PCGUAtN.aspx#",
+    "en": "https://v.wjx.cn/vm/hmuVm4j.aspx#"
+  },
+  "global-cmip6-pm25-statistics": {
+    "zh": "https://v.wjx.cn/vm/YDyva7q.aspx#",
+    "en": "https://v.wjx.cn/vm/twYIM7Y.aspx#"
+  },
+  "global-pm25-deaths-2015-2050": {
+    "zh": "https://v.wjx.cn/vm/QvNfWo0.aspx#",
+    "en": "https://v.wjx.cn/vm/m6sJ8zN.aspx#"
+  },
+  "china-health-impact-model-comparison": {
+    "zh": "https://v.wjx.cn/vm/QxXze0N.aspx#",
+    "en": "https://v.wjx.cn/vm/YYmi3vc.aspx#"
+  },
+  "air-pollution-health-impact-analysis-v2": {
+    "zh": "https://v.wjx.cn/vm/Q0X0NvH.aspx#",
+    "en": "https://v.wjx.cn/vm/PQGGggB.aspx#"
+  },
+  "pm25-health-risk-tool-v3": {
+    "zh": "https://v.wjx.cn/vm/hmkfGEu.aspx#",
+    "en": "https://v.wjx.cn/vm/YWcF3vc.aspx#"
+  },
+  "data-customization": {
+    "zh": "https://v.wjx.cn/vm/PbUV4kG.aspx#",
+    "en": "https://v.wjx.cn/vm/hAVVeGu.aspx#"
+  }
 }

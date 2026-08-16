@@ -3,7 +3,8 @@
 import { useState } from "react";
 import { ChemicalText } from "@/components/chemical-text";
 import { DownloadLauncher } from "@/components/download-launcher";
-import type { DownloadProduct } from "@/lib/site-content";
+import { useLanguage } from "@/lib/i18n";
+import { getLocalizedProducts, type DownloadProduct } from "@/lib/site-content";
 
 type ProductGridProps = {
   products: DownloadProduct[];
@@ -30,7 +31,7 @@ const defaultColumnLabels = {
 };
 
 function formatYearRange(yearRange: string) {
-  const items = yearRange.split("、").map((item) => item.trim()).filter(Boolean);
+  const items = yearRange.split(/、|,\s*/).map((item) => item.trim()).filter(Boolean);
   const isYearList = items.length > 2 && items.every((item) => /^\d{4}$/.test(item));
 
   if (!isYearList) {
@@ -39,7 +40,7 @@ function formatYearRange(yearRange: string) {
 
   const lines: string[] = [];
   for (let index = 0; index < items.length; index += 2) {
-    lines.push(items.slice(index, index + 2).join("、"));
+    lines.push(items.slice(index, index + 2).join(yearRange.includes("、") ? "、" : ", "));
   }
 
   return (
@@ -58,8 +59,42 @@ export function ProductGrid({
   sidebarTitle = "清单列表",
   columnLabels = defaultColumnLabels,
 }: ProductGridProps) {
-  const [selectedProduct, setSelectedProduct] = useState<DownloadProduct | null>(null);
-  const [referenceProduct, setReferenceProduct] = useState<DownloadProduct | null>(null);
+  const { language } = useLanguage();
+  const localizedProducts = getLocalizedProducts(language, products[0]?.category);
+  const isEnglish = language === "en";
+  const labels = isEnglish
+    ? products[0]?.category === "software"
+      ? {
+          name: "Software",
+          yearRange: "Version",
+          spatialResolution: "Applications",
+          temporalResolution: "Maintenance",
+          dimensions: "Main Functions",
+        }
+      : {
+          name: "Dataset",
+          yearRange: "Years",
+          dataFormat: "Format",
+          spatialResolution: "Spatial Coverage",
+          temporalResolution: "Temporal Resolution",
+          dimensions: "Key Dimensions",
+        }
+    : columnLabels;
+  const localizedTitle = isEnglish
+    ? products[0]?.category === "software"
+      ? "Software Catalog"
+      : "Shared Data Catalog"
+    : title;
+  const localizedSidebarTitle = isEnglish ? "Catalog" : sidebarTitle;
+  const localizedActionLabel = isEnglish
+    ? products[0]?.category === "software"
+      ? "Download Software"
+      : "Download Data"
+    : actionLabel;
+  const [selectedProductId, setSelectedProductId] = useState<string | null>(null);
+  const [referenceProductId, setReferenceProductId] = useState<string | null>(null);
+  const selectedProduct = localizedProducts.find((product) => product.id === selectedProductId) || null;
+  const referenceProduct = localizedProducts.find((product) => product.id === referenceProductId) || null;
 
   function downloadRis(product: DownloadProduct) {
     const risText = product.references
@@ -95,15 +130,23 @@ export function ProductGrid({
 
   return (
     <>
-      <section className="catalog-layout" aria-label="数据软件清单">
-        <aside className="catalog-sidebar" aria-label={sidebarTitle}>
+      <section className="catalog-layout" aria-label={isEnglish ? "Data and software catalog" : "数据软件清单"}>
+        <aside className="catalog-sidebar" aria-label={localizedSidebarTitle}>
           <div className="catalog-sidebar__title">
-            <strong>{sidebarTitle}</strong>
+            <strong>{localizedSidebarTitle}</strong>
             <span aria-hidden="true">▾</span>
           </div>
           <div className="catalog-sidebar__group">
-            <p>{products[0]?.category === "software" ? "软件平台" : "数据平台"}</p>
-            {products.map((product, index) => (
+            <p>
+              {isEnglish
+                ? products[0]?.category === "software"
+                  ? "Software"
+                  : "Data"
+                : products[0]?.category === "software"
+                  ? "软件平台"
+                  : "数据平台"}
+            </p>
+            {localizedProducts.map((product, index) => (
               <a key={product.id} href={`#${product.id}`}>
                 {index + 1}. <ChemicalText text={product.title} />
               </a>
@@ -112,33 +155,36 @@ export function ProductGrid({
         </aside>
 
         <div className="catalog-main">
-          <h2>{title}</h2>
+          <h2>{localizedTitle}</h2>
           <div className="catalog-table-wrap">
             <table className="catalog-table">
               <thead>
                 <tr>
-                  <th>{columnLabels.name}</th>
-                  <th>{columnLabels.yearRange}</th>
-                  {columnLabels.dataFormat ? <th>{columnLabels.dataFormat}</th> : null}
-                  <th>{columnLabels.spatialResolution}</th>
-                  <th>{columnLabels.temporalResolution}</th>
-                  <th className="catalog-table__dimensions-cell">{columnLabels.dimensions}</th>
-                  <th className="catalog-table__actions-cell">操作</th>
+                  <th>{labels.name}</th>
+                  <th>{labels.yearRange}</th>
+                  {labels.dataFormat ? <th>{labels.dataFormat}</th> : null}
+                  <th>{labels.spatialResolution}</th>
+                  <th>{labels.temporalResolution}</th>
+                  <th className="catalog-table__dimensions-cell">{labels.dimensions}</th>
+                  <th className="catalog-table__actions-cell">{isEnglish ? "Actions" : "操作"}</th>
                 </tr>
               </thead>
               <tbody>
-                {products.map((product) => (
+                {localizedProducts.map((product) => (
                   <tr id={product.id} key={product.id}>
                     <td className="catalog-table__name">
                       <strong>
                         <ChemicalText text={product.title} />
                       </strong>
                       {product.registrationNumber ? (
-                        <small>软著编号：{product.registrationNumber}</small>
+                        <small>
+                          {isEnglish ? "Software Registration No.: " : "软著编号："}
+                          {product.registrationNumber}
+                        </small>
                       ) : null}
                     </td>
                     <td>{formatYearRange(product.tableMeta.yearRange)}</td>
-                    {columnLabels.dataFormat ? <td>{product.tableMeta.dataFormat}</td> : null}
+                    {labels.dataFormat ? <td>{product.tableMeta.dataFormat}</td> : null}
                     <td>
                       <ChemicalText text={product.tableMeta.spatialResolution} />
                     </td>
@@ -151,22 +197,22 @@ export function ProductGrid({
                         <button
                           type="button"
                           className="table-action"
-                          onClick={() => setSelectedProduct(product)}
+                          onClick={() => setSelectedProductId(product.id)}
                         >
-                          详细信息
+                          {isEnglish ? "Details" : "详细信息"}
                         </button>
                         <DownloadLauncher
-                          products={products}
+                          products={localizedProducts}
                           productId={product.id}
-                          buttonLabel={actionLabel}
+                          buttonLabel={localizedActionLabel}
                           className="table-action"
                         />
                         <button
                           type="button"
                           className="table-action"
-                          onClick={() => setReferenceProduct(product)}
+                          onClick={() => setReferenceProductId(product.id)}
                         >
-                          来源文献
+                          {isEnglish ? "References" : "来源文献"}
                         </button>
                       </div>
                     </td>
@@ -179,7 +225,7 @@ export function ProductGrid({
       </section>
 
       {selectedProduct ? (
-        <div className="dialog-backdrop" role="presentation" onClick={() => setSelectedProduct(null)}>
+        <div className="dialog-backdrop" role="presentation" onClick={() => setSelectedProductId(null)}>
           <section
             className="dialog-panel dialog-panel--detail"
             role="dialog"
@@ -196,15 +242,15 @@ export function ProductGrid({
               <button
                 type="button"
                 className="dialog-panel__close"
-                onClick={() => setSelectedProduct(null)}
-                aria-label="关闭"
+                onClick={() => setSelectedProductId(null)}
+                aria-label={isEnglish ? "Close" : "关闭"}
               >
                 ×
               </button>
             </div>
             <div className="dialog-panel__body detail-grid">
               {selectedProduct.details
-                .filter((detail) => detail.label !== "标题")
+                .filter((detail) => detail.label !== "标题" && detail.label !== "Title")
                 .map((detail) => (
                   <div key={detail.label} className="detail-row">
                     <strong>{detail.label}</strong>
@@ -219,7 +265,7 @@ export function ProductGrid({
       ) : null}
 
       {referenceProduct ? (
-        <div className="dialog-backdrop" role="presentation" onClick={() => setReferenceProduct(null)}>
+        <div className="dialog-backdrop" role="presentation" onClick={() => setReferenceProductId(null)}>
           <section
             className="dialog-panel dialog-panel--detail"
             role="dialog"
@@ -229,7 +275,7 @@ export function ProductGrid({
           >
             <div className="dialog-panel__header">
               <div>
-                <h3 id="product-reference-title">来源文献</h3>
+                <h3 id="product-reference-title">{isEnglish ? "References" : "来源文献"}</h3>
                 <p className="dialog-panel__subtext">
                   <ChemicalText text={referenceProduct.title} />
                 </p>
@@ -237,8 +283,8 @@ export function ProductGrid({
               <button
                 type="button"
                 className="dialog-panel__close"
-                onClick={() => setReferenceProduct(null)}
-                aria-label="关闭"
+                onClick={() => setReferenceProductId(null)}
+                aria-label={isEnglish ? "Close" : "关闭"}
               >
                 ×
               </button>
@@ -250,7 +296,7 @@ export function ProductGrid({
                     <article key={reference.id} className="reference-item">
                       {reference.citationGb ? (
                         <div>
-                          <strong>国标 GB/T 7714</strong>
+                          <strong>{isEnglish ? "GB/T 7714" : "国标 GB/T 7714"}</strong>
                           <p>
                             <ChemicalText text={reference.citationGb} />
                           </p>
@@ -271,7 +317,7 @@ export function ProductGrid({
                       ) : null}
                       {reference.url ? (
                         <a className="text-link" href={reference.url} target="_blank" rel="noreferrer">
-                          查看文献
+                          {isEnglish ? "View Publication" : "查看文献"}
                         </a>
                       ) : null}
                     </article>
@@ -281,11 +327,13 @@ export function ProductGrid({
                     className="primary-action primary-action--inline"
                     onClick={() => downloadRis(referenceProduct)}
                   >
-                    导出 RIS
+                    {isEnglish ? "Export RIS" : "导出 RIS"}
                   </button>
                 </>
               ) : (
-                <p className="empty-note">暂无来源文献信息。</p>
+                <p className="empty-note">
+                  {isEnglish ? "No reference information is available." : "暂无来源文献信息。"}
+                </p>
               )}
             </div>
           </section>

@@ -13,7 +13,7 @@ export default async function SoftwarePlatformPage() {
   return (
     <div className="page-shell">
       <PageHero
-        title={page.title}
+        title={{ zh: page.title, en: "Software Platform" }}
         subtitle={page.subtitle}
         imageUrl={page.heroImageUrl}
       />
