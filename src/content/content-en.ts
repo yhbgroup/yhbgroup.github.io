@@ -123,10 +123,10 @@ export const productTranslationsEn: Record<string, ProductTranslation> = {
     ],
   },
   "china-health-impact-model-comparison": {
-    title: "Health Impact Data for China Assessed Using Multiple Models",
+    title: "PM2.5-attributable mortality Data for China Assessed Using Multiple E-R Models",
     shortTitle: "Multi-model Health Impact Data for China",
     description:
-      "Health impact estimates for China compiled using multiple exposure-response models to compare differences among model-based estimates.",
+      "PM2.5-attributable mortality estimates for China compiled using multiple exposure-response models to compare differences among model-based estimates.",
     updateNote: "Apply by region, exposure-response function, year, disease, and age group through the Wenjuanxing form.",
     filters: {
       years: Array.from({ length: 21 }, (_, index) => String(2000 + index)),
