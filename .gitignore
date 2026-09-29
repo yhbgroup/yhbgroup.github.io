@@ -11,6 +11,10 @@
 # testing
 /coverage
 
+# local previews and review artifacts
+/output/
+/.next-dev.*.log
+
 # next.js
 /.next/
 /out/

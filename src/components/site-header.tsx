@@ -24,8 +24,8 @@ export function SiteHeader() {
 
   useEffect(() => {
     const routeTitles: Record<string, { zh: string; en: string }> = {
-      "/": { zh: "团队介绍", en: "About Us" },
-      "/team": { zh: "团队介绍", en: "About Us" },
+      "/": { zh: "首页", en: "Home" },
+      "/team": { zh: "团队成员", en: "Team Members" },
       "/data": { zh: "数据平台", en: "Data Platform" },
       "/software": { zh: "软件平台", en: "Software Platform" },
       "/services/data-customization": { zh: "数据定制", en: "Data Customization" },
@@ -45,7 +45,7 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <div className="site-header__inner">
-        <Link href="/team" className="site-header__brand">
+        <Link href="/" className="site-header__brand">
           <Image
             src="/logo.png"
             alt={language === "zh" ? `${platformName} 标识` : `${platformName} logo`}

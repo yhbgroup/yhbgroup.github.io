@@ -16,11 +16,12 @@ import {
 const publicImageExtensions = [".png", ".jpg", ".jpeg", ".webp", ".avif"] as const;
 
 const pageHeroImageNames: Record<string, string> = {
+  home: "index",
   data: "data",
   software: "software",
   "data-customization": "services",
   contact: "services",
-  team: "team",
+  team: "team1",
 };
 
 function resolvePublicImagePath(imageName: string) {
@@ -37,6 +38,10 @@ function resolvePublicImagePath(imageName: string) {
 }
 
 export const fallbackPages: Record<string, SitePageContent> = {
+  home: {
+    title: "首页",
+    heroImageUrl: "/index.png",
+  },
   data: {
     title: "数据平台",
     heroImageUrl: "/data",
@@ -54,8 +59,8 @@ export const fallbackPages: Record<string, SitePageContent> = {
     heroImageUrl: "/services",
   },
   team: {
-    title: "团队介绍",
-    heroImageUrl: "/team",
+    title: "团队成员",
+    heroImageUrl: "/team1.jpg",
   },
 };
 

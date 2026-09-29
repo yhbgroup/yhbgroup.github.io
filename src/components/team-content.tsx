@@ -7,23 +7,13 @@ import { PageHero } from "@/components/page-hero";
 
 export function TeamContent({ page }: { page: SitePageContent }) {
   const { language } = useLanguage();
-  const { intro: teamIntro, members: teamMembers } = getLocalizedTeam(language);
+  const { members: teamMembers } = getLocalizedTeam(language);
   const isEnglish = language === "en";
 
   return (
     <div className="page-shell">
-      <PageHero title={{ zh: page.title, en: "About Us" }} subtitle={page.subtitle} imageUrl={page.heroImageUrl} />
+      <PageHero title={{ zh: page.title, en: "Team Members" }} subtitle={page.subtitle} imageUrl={page.heroImageUrl} />
       <div className="page-content page-content--team">
-        <section className="team-overview" aria-labelledby="team-overview-title">
-          <div className="team-overview__content">
-            <h2 id="team-overview-title">{teamIntro.title}</h2>
-            {teamIntro.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
-          </div>
-          <div className="team-overview__logo" aria-hidden="true"><img src="/logo.png" alt="" /></div>
-        </section>
-        <section className="team-section-heading" aria-labelledby="team-members-title">
-          <h2 id="team-members-title">{isEnglish ? "Team Members" : "团队成员"}</h2>
-        </section>
         <section className="team-list" aria-label={isEnglish ? "Team members" : "团队成员"}>
           {teamMembers.map((member) => (
             <article key={`${member.name}-${member.institution}`} className="team-member">

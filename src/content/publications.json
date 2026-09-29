@@ -1,0 +1,215 @@
+{
+  "settings": {
+    "headings": {
+      "featured": {
+        "zh": "代表性成果",
+        "en": "Featured Findings"
+      },
+      "journal": {
+        "zh": "期刊论文",
+        "en": "Journal Articles"
+      }
+    },
+    "highlightAuthors": [
+      "Huanbi Yue",
+      "岳桓陛"
+    ]
+  },
+  "publications": [
+  {
+    "year": "2024",
+    "authors": "Huanbi Yue, Chunyang He, Qingxu Huang, Da Zhang, Peijun Shi, Enayat A. Moallemi, Fangjin Xu, Yang Yang, Xin Qi, Qun Ma, Brett A. Bryan",
+    "title": "Substantially reducing global PM2.5-related deaths under SDG3.9 requires better air pollution control and healthcare",
+    "journal": "Nature Communications",
+    "volume": "15",
+    "article": "2729",
+    "doi": "10.1038/s41467-024-46969-3",
+    "url": "https://doi.org/10.1038/s41467-024-46969-3",
+    "feature": {
+      "order": 1,
+      "titleZh": "全球PM2.5归因死亡预测",
+      "titleEn": "Global PM2.5 mortality projections",
+      "image": "/research/global-pm25-map-2024.jpg",
+      "figure": "Fig. 4",
+      "captionZh": "（SCI 一区 Top，IF=17.694，得到",
+      "captionEn": "(SCI Q1 Top, IF=17.694, featured by",
+      "captionUrl": "https://news.ouc.edu.cn/2024/0407/c91a115581/page.htm",
+      "captionLinkZh": "学校主页专题报道",
+      "captionLinkEn": "the university website",
+      "captionSuffixZh": "）",
+      "captionSuffixEn": ")"
+    }
+  },
+  {
+    "year": "2024",
+    "authors": "Yang Yang, Yang Liu, Huanbi Yue, Zhe Dong",
+    "title": "Spatiotemporal Pattern of Urban Sprawl Based on the Weighted Urban Proliferation Model: A Case Study of the Bohai Rim Region in China",
+    "journal": "Land",
+    "volume": "13",
+    "article": "55",
+    "doi": "10.3390/land13010055",
+    "url": "https://doi.org/10.3390/land13010055"
+  },
+  {
+    "year": "2023",
+    "authors": "Fangjin Xu, Qingxu Huang, Huanbi Yue, Xingyun Feng, Haoran Xu, Chunyang He, Peng Yin, Brett A. Bryan",
+    "title": "The challenge of population aging for mitigating deaths from PM2.5 air pollution in China",
+    "journal": "Nature Communications",
+    "volume": "14",
+    "article": "5222",
+    "doi": "10.1038/s41467-023-40908-4",
+    "url": "https://doi.org/10.1038/s41467-023-40908-4",
+    "feature": {
+      "order": 3,
+      "titleZh": "人口老龄化与PM2.5死亡负担",
+      "titleEn": "Population aging and PM2.5 mortality",
+      "image": "/research/population-aging-2023.jpg",
+      "figure": "Fig. 1",
+      "captionZh": "（SCI 一区 Top，IF=17.694）",
+      "captionEn": "(SCI Q1 Top, IF=17.694)"
+    }
+  },
+  {
+    "year": "2021",
+    "authors": "Ling Zhang, Qingxu Huang, Chunyang He, Huanbi Yue, Quanbo Zhao",
+    "title": "Assessing the dynamics of sustainability for social-ecological systems based on the adaptive cycle framework: A case study in the Beijing-Tianjin-Hebei urban agglomeration",
+    "journal": "Sustainable Cities and Society",
+    "volume": "70",
+    "article": "102899",
+    "doi": "10.1016/j.scs.2021.102899",
+    "url": "https://doi.org/10.1016/j.scs.2021.102899",
+    "feature": {
+      "order": 6,
+      "titleZh": "社会生态系统可持续性评估方法",
+      "titleEn": "Social-ecological sustainability assessment",
+      "image": "/research/adaptive-cycle-sustainability-method-2021.jpg",
+      "figure": "Fig. 2"
+    }
+  },
+  {
+    "year": "2020",
+    "authors": "Huanbi Yue, Chunyang He, Qingxu Huang, Dan Yin, Brett A. Bryan",
+    "title": "Stronger policy required to substantially reduce deaths from PM2.5 pollution in China",
+    "journal": "Nature Communications",
+    "volume": "11",
+    "article": "1462",
+    "doi": "10.1038/s41467-020-15319-4",
+    "url": "https://doi.org/10.1038/s41467-020-15319-4",
+    "feature": {
+      "order": 2,
+      "titleZh": "中国PM2.5治理健康效益",
+      "titleEn": "Health benefits of PM2.5 control in China",
+      "image": "/research/china-policy-map-2020.jpg",
+      "figure": "Fig. 2",
+      "captionZh": "（SCI 一区 Top，IF=17.694，ESI 高被引论文，得到科技日报等权威媒体报道）",
+      "captionEn": "(SCI Q1 Top, IF=17.694, ESI Highly Cited Paper, covered by Science and Technology Daily and other authoritative media)"
+    }
+  },
+  {
+    "year": "2020",
+    "authors": "Huanbi Yue, Qingxu Huang, Chunyang He, Xiaoling Zhang, Zihang Fang",
+    "title": "Spatiotemporal patterns of global air pollution: A multi-scale landscape analysis based on dust and sea-salt removed PM2.5 data",
+    "journal": "Journal of Cleaner Production",
+    "volume": "252",
+    "article": "119887",
+    "doi": "10.1016/j.jclepro.2019.119887",
+    "url": "https://doi.org/10.1016/j.jclepro.2019.119887",
+    "feature": {
+      "order": 4,
+      "titleZh": "全球PM2.5污染景观演变",
+      "titleEn": "Global PM2.5 pollution landscape dynamics",
+      "image": "/research/global-pm25-landscape-results-2020.jpg",
+      "figure": "Fig. 2",
+      "captionZh": "（SCI 一区 Top，IF=11.072）",
+      "captionEn": "(SCI Q1 Top, IF=11.072)"
+    }
+  },
+  {
+    "year": "2020",
+    "authors": "Lei Zhu, Qingxu Huang, Qiang Ren, Huanbi Yue, Chentai Jiao, Chunyang He",
+    "title": "Identifying urban haze islands and extracting their spatial features",
+    "journal": "Ecological Indicators",
+    "volume": "115",
+    "article": "106385",
+    "doi": "10.1016/j.ecolind.2020.106385",
+    "url": "https://doi.org/10.1016/j.ecolind.2020.106385"
+  },
+  {
+    "year": "2020",
+    "authors": "Fangjin Xu, Qingxu Huang, Huanbi Yue, Chunyang He, Changbo Wang, Han Zhang",
+    "title": "Reexamining the relationship between urbanization and pollutant emissions in China based on the STIRPAT model",
+    "journal": "Journal of Environmental Management",
+    "volume": "273",
+    "article": "111134",
+    "doi": "10.1016/j.jenvman.2020.111134",
+    "url": "https://doi.org/10.1016/j.jenvman.2020.111134"
+  },
+  {
+    "year": "2020",
+    "authors": "Yanwen Wang, Huanbi Yue, Qing Peng, Chao He, Song Hong, Brett A. Bryan",
+    "title": "Recent responses of grassland net primary productivity to climatic and anthropogenic factors in Kyrgyzstan",
+    "journal": "Land Degradation & Development",
+    "volume": "31(16)",
+    "article": "2490-2506",
+    "doi": "10.1002/ldr.3623",
+    "url": "https://doi.org/10.1002/ldr.3623"
+  },
+  {
+    "year": "2017",
+    "authors": "Huanbi Yue, Chunyang He, Yuanyuan Zhao, Qun Ma, Qiaofeng Zhang",
+    "title": "The brightness temperature adjusted dust index: An improved approach to detect dust storms using MODIS imagery",
+    "journal": "International Journal of Applied Earth Observation and Geoinformation",
+    "volume": "57",
+    "article": "166-176",
+    "doi": "10.1016/j.jag.2016.12.016",
+    "url": "https://doi.org/10.1016/j.jag.2016.12.016",
+    "feature": {
+      "order": 5,
+      "titleZh": "BADI沙尘暴遥感识别",
+      "titleEn": "BADI-based dust storm detection",
+      "image": "/research/badi-dust-detection-2017.jpg",
+      "figure": "Fig. 5",
+      "captionZh": "（SCI 一区 Top，IF=7.672）",
+      "captionEn": "(SCI Q1 Top, IF=7.672)"
+    }
+  },
+  {
+    "year": "2017",
+    "authors": "Yinyin Dou, Zhifeng Liu, Chunyang He, Huanbi Yue",
+    "title": "Urban Land Extraction Using VIIRS Nighttime Light Data: An Evaluation of Three Popular Methods",
+    "journal": "Remote Sensing",
+    "volume": "9(2)",
+    "article": "175",
+    "doi": "10.3390/rs9020175",
+    "url": "https://doi.org/10.3390/rs9020175"
+  },
+  {
+    "year": "2017",
+    "authors": "Jingwei Li, Zhifeng Liu, Chunyang He, Huanbi Yue, Siyuan Gou",
+    "title": "Water shortages raised a legitimate concern over the sustainable development of the drylands of northern China: Evidence from the water stress index",
+    "journal": "Science of the Total Environment",
+    "volume": "590-591",
+    "article": "739-750",
+    "doi": "10.1016/j.scitotenv.2017.03.037",
+    "url": "https://doi.org/10.1016/j.scitotenv.2017.03.037"
+  },
+  {
+    "year": "2015",
+    "authors": "岳桓陛，杨建英，杨阳，史常青，赵平，沈毅",
+    "title": "不同降雨强度条件下植被毯护坡技术的产流特性",
+    "journal": "中国水土保持科学",
+    "volume": "13(1)",
+    "article": "35-41",
+    "url": "https://zgstbckx.xml-journal.net/article/id/10068"
+  },
+  {
+    "year": "2014",
+    "authors": "岳桓陛，杨建英，杨旸，等",
+    "title": "边坡绿化中植被毯技术保水效益评价",
+    "journal": "四川农业大学学报",
+    "volume": "32(1)",
+    "article": "23-27",
+    "url": "https://www.cnki.com.cn/Article/CJFDTOTAL-SCND201401004.htm"
+  }
+  ]
+}

@@ -17,11 +17,22 @@ type LanguageContextValue = {
 
 const STORAGE_KEY = "yhbgroup-language";
 const LANGUAGE_CHANGE_EVENT = "yhbgroup-language-change";
+let fallbackLanguage: Language = "zh";
 
 const LanguageContext = createContext<LanguageContextValue | null>(null);
 
 function getStoredLanguage(): Language {
-  return window.localStorage.getItem(STORAGE_KEY) === "en" ? "en" : "zh";
+  try {
+    const storedLanguage = window.localStorage?.getItem(STORAGE_KEY);
+
+    if (storedLanguage === "en" || storedLanguage === "zh") {
+      fallbackLanguage = storedLanguage;
+    }
+  } catch {
+    // Some privacy modes and embedded browsers do not expose localStorage.
+  }
+
+  return fallbackLanguage;
 }
 
 function subscribeToLanguageChange(onStoreChange: () => void) {
@@ -35,7 +46,14 @@ function subscribeToLanguageChange(onStoreChange: () => void) {
 }
 
 function setStoredLanguage(language: Language) {
-  window.localStorage.setItem(STORAGE_KEY, language);
+  fallbackLanguage = language;
+
+  try {
+    window.localStorage?.setItem(STORAGE_KEY, language);
+  } catch {
+    // The in-memory value keeps switching functional when storage is unavailable.
+  }
+
   window.dispatchEvent(new Event(LANGUAGE_CHANGE_EVENT));
 }
 

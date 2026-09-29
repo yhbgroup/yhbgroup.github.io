@@ -292,8 +292,8 @@ export const teamContentEn: TeamContent = {
         },
         {
           label: "Institutional Profile:",
-          text: "https://siapa.ouc.edu.cn/2021/0827/c18283a345080/page.htm",
-          href: "https://siapa.ouc.edu.cn/2021/0827/c18283a345080/page.htm",
+          text: "https://siapa.ouc.edu.cn/2024/1016/c19879a486511/page.htm",
+          href: "https://siapa.ouc.edu.cn/2024/1016/c19879a486511/page.htm",
         },
       ],
     },

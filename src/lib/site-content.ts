@@ -1,4 +1,5 @@
 import productsData from "@/content/products.json";
+import publicationsData from "@/content/publications.json";
 import resourceLinksData from "@/content/resource-links.json";
 import teamData from "@/content/team.json";
 import { productTranslationsEn, teamContentEn } from "@/content/content-en";
@@ -18,7 +19,8 @@ export type NavGroup = {
 };
 
 export const navGroups: NavGroup[] = [
-  { href: "/team", label: "团队介绍" },
+  { href: "/", label: "首页" },
+  { href: "/team", label: "团队成员" },
   { href: "/data", label: "数据平台" },
   { href: "/software", label: "软件平台" },
   {
@@ -31,7 +33,8 @@ export const navGroups: NavGroup[] = [
 ];
 
 export const navGroupsEn: NavGroup[] = [
-  { href: "/team", label: "About Us" },
+  { href: "/", label: "Home" },
+  { href: "/team", label: "Team Members" },
   { href: "/data", label: "Data Platform" },
   { href: "/software", label: "Software Platform" },
   {
@@ -84,6 +87,47 @@ export type SourceReference = {
   citationApa6?: string;
   risText?: string;
 };
+
+export type RepresentativePublication = {
+  year: string;
+  authors: string;
+  title: string;
+  journal: string;
+  volume: string;
+  article: string;
+  doi?: string;
+  url: string;
+  feature?: {
+    order: number;
+    titleZh: string;
+    titleEn: string;
+    image: string;
+    figure: string;
+    figureEn?: string;
+    imageSourceUrl?: string;
+    captionZh?: string;
+    captionEn?: string;
+    captionUrl?: string;
+    captionLinkZh?: string;
+    captionLinkEn?: string;
+    captionSuffixZh?: string;
+    captionSuffixEn?: string;
+  };
+};
+
+export type PublicationContent = {
+  settings: {
+    headings: {
+      featured: Record<Language, string>;
+      journal: Record<Language, string>;
+    };
+    highlightAuthors: string[];
+  };
+  publications: RepresentativePublication[];
+};
+
+export const publicationContent = publicationsData as PublicationContent;
+export const representativePublications = publicationContent.publications;
 
 export const downloadProducts = productsData as DownloadProduct[];
 
