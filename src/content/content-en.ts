@@ -123,10 +123,10 @@ export const productTranslationsEn: Record<string, ProductTranslation> = {
     ],
   },
   "china-health-impact-model-comparison": {
-    title: "Health Impact Data for China Assessed Using Multiple Models",
+    title: "PM2.5-attributable mortality Data for China Assessed Using Multiple E-R Models",
     shortTitle: "Multi-model Health Impact Data for China",
     description:
-      "Health impact estimates for China compiled using multiple exposure-response models to compare differences among model-based estimates.",
+      "PM2.5-attributable mortality estimates for China compiled using multiple exposure-response models to compare differences among model-based estimates.",
     updateNote: "Apply by region, exposure-response function, year, disease, and age group through the Wenjuanxing form.",
     filters: {
       years: Array.from({ length: 21 }, (_, index) => String(2000 + index)),
@@ -277,7 +277,7 @@ export const teamContentEn: TeamContent = {
       role: "Associate Professor",
       photoUrl: "/team/yuehuanbi.jpg",
       description:
-        "Huanbi Yue is a male associate professor from Qingyang, Gansu Province. Using interdisciplinary methods including geographic data analysis, policy evaluation, and epidemiological modeling, he studies the setting of urban atmospheric environmental policy targets and the associated health benefits. He has published more than ten papers and undertaken projects funded by the National Natural Science Foundation of China and the Natural Science Foundation of Shandong Province. As team leader, he was selected for the Outstanding Youth Innovation Team Program for Higher Education Institutions in Shandong Province (Atmospheric Environmental Risk Management Innovation Team). He serves as a member of the Professional Committee for Sustainable Use of Resources and Disaster Reduction of the China Society of Natural Resources and the Professional Committee for Pollution and Carbon Reduction of the Chinese Society for Environmental Sciences. He is an editorial board member of Humanities and Social Sciences Communications, Regional Sustainability, and Eco-Environment & Health (SCI Q1). As of July 2026, his publications had received more than 1,300 citations; his most-cited paper had received more than 400 citations; and his h-index was 12.",
+        "Huanbi Yue is associate professor of Ocean University of China. Using interdisciplinary methods including geographic data analysis, policy evaluation, and epidemiological modeling, he studies the setting of urban atmospheric environmental policy targets and the associated health benefits. He has published more than ten papers in journals including Nauture Communications and undertaken projects funded by the National Natural Science Foundation of China and the Natural Science Foundation of Shandong Province. He serves as a member of the Professional Committee for Sustainable Use of Resources and Disaster Reduction of the China Society of Natural Resources and the Professional Committee for Pollution and Carbon Reduction of the Chinese Society for Environmental Sciences. He is an editorial board member of Humanities and Social Sciences Communications, Regional Sustainability, and Eco-Environment & Health (SCI Q1). As of July 2026, his publications had received more than 1,300 citations; his most-cited paper had received more than 400 citations; and his h-index was 12.",
       links: [
         { label: "ORCID:", text: "0000-0003-3214-815X", href: "https://orcid.org/0000-0003-3214-815X" },
         {
@@ -299,38 +299,38 @@ export const teamContentEn: TeamContent = {
     },
     {
       name: "Xin Xiong",
-      institution: "Master's Student, 2024 Cohort, Ocean University of China",
+      institution: "Graduate Student, Ocean University of China",
       photoUrl: "/team/xiongxin.jpg",
       description:
-        "Xin Xiong is a master's student in Land Resource Management at the School of International Affairs and Public Administration, Ocean University of China. Her research focuses on assessing the health impacts of air pollution and the atmospheric environmental effects of urban spatial expansion, particularly deaths attributable to PM2.5 pollution and the environmental effects and regulation of two- and three-dimensional urban expansion.",
+        "Xin Xiong is a master's student. Her research focuses on assessing the health impacts of air pollution and the atmospheric environmental effects of urban spatial expansion, particularly deaths attributable to PM2.5 pollution and the environmental effects and regulation of two- and three-dimensional urban expansion.",
     },
     {
       name: "Tailong Wang",
-      institution: "Master's Student, 2025 Cohort, Ocean University of China",
+      institution: "Graduate Student, Ocean University of China",
       photoUrl: "/team/wangtailong.jpg",
       description:
-        "Tailong Wang is a master's student in Land Resource Management at the School of International Affairs and Public Administration, Ocean University of China. His research focuses on assessing the health impacts of air pollution and quantifying the health benefits of environmental policies, with particular interests in urban expansion, the spatiotemporal evolution of PM2.5, and population exposure. He has experience in spatial data processing and policy scenario analysis. As first author, he has published one paper in a Chinese Science and Technology Core Journal and completed a provincial college student innovation and entrepreneurship training project as project leader.",
+        "Tailong Wang is a master's student. His research focuses on assessing the health impacts of air pollution and quantifying the health benefits of environmental policies, with particular interests in urban expansion, the spatiotemporal evolution of PM2.5, and population exposure. He has experience in spatial data processing and policy scenario analysis. As first author, he has published one paper in a Chinese Science and Technology Core Journal and completed a provincial college student innovation and entrepreneurship training project as project leader.",
     },
     {
       name: "Xialei Qu",
-      institution: "Master's Student, 2026 Cohort, Ocean University of China",
+      institution: "Graduate Student, Ocean University of China",
       photoUrl: "/team/quxialei.jpg",
       description:
-        "Xialei Qu is a master's student in Land Resource Management at the School of International Affairs and Public Administration, Ocean University of China. Her research focuses on the public health impacts of air pollution under climate change scenarios, environmental policy, and sustainable governance. She is particularly interested in global disparities in PM2.5 exposure, health risk mechanisms, and policy effectiveness. She has experience in geographic spatiotemporal modeling, quantitative health risk analysis, and multidimensional GIS analysis. She participated in China's First National Comprehensive Natural Disaster Risk Survey and led one provincial college student innovation project and one undergraduate research fund project.",
+        "Xialei Qu is a master's student. Her research focuses on the public health impacts of air pollution under climate change scenarios, environmental policy, and sustainable governance. She is particularly interested in global disparities in PM2.5 exposure, health risk mechanisms, and policy effectiveness. She has experience in geographic spatiotemporal modeling, quantitative health risk analysis, and multidimensional GIS analysis. She participated in China's First National Comprehensive Natural Disaster Risk Survey and led one provincial college student innovation project and one undergraduate research fund project.",
     },
     {
       name: "Yichi Zhang",
-      institution: "Master's Student, 2026 Cohort, Ocean University of China",
+      institution: "Graduate Student, Ocean University of China",
       photoUrl: "/team/zhangyichi.jpg",
       description:
-        "Yichi Zhang is a master's student in Land Resource Management at the School of International Affairs and Public Administration, Ocean University of China. Her research focuses on assessing the health impacts of air pollution and quantifying the health benefits of environmental policies, particularly deaths attributable to PM2.5 pollution, health impact estimation, and policy scenario simulation. She has experience in geospatial analysis, model development, and policy evaluation. She has published one SCI-indexed paper as first author and participated as a core member in a national college student innovation and entrepreneurship training project.",
+        "Yichi Zhang is a master's student. Her research focuses on assessing the health impacts of air pollution and quantifying the health benefits of environmental policies, particularly deaths attributable to PM2.5 pollution, health impact estimation, and policy scenario simulation. She has experience in geospatial analysis, model development, and policy evaluation. She has published one SCI-indexed paper as first author and participated as a core member in a national college student innovation and entrepreneurship training project.",
     },
     {
       name: "Xiangwen Zhang",
-      institution: "Undergraduate Student, 2023 Cohort, Ocean University of China",
+      institution: "Undergraduate Student, Ocean University of China",
       photoUrl: "/team/zhangxiangwen.jpg",
       description:
-        "Xiangwen Zhang is an undergraduate student in Public Administration at the School of International Affairs and Public Administration, Ocean University of China. Her research focuses on the coordination between pollution- and carbon-reduction policy targets and target attainment in Chinese cities, together with the associated influencing factors. She is particularly interested in the coupling coordination between PM2.5 concentrations and CO2 intensity and in the socioeconomic factors affecting pollution and carbon reduction. She has experience in geospatial analysis, model development, and policy evaluation.",
+        "Xiangwen Zhang is an undergraduate student. Her research focuses on the coordination between pollution- and carbon-reduction policy targets and target attainment in Chinese cities, together with the associated influencing factors. She is particularly interested in the coupling coordination between PM2.5 concentrations and CO2 intensity and in the socioeconomic factors affecting pollution and carbon reduction. She has experience in geospatial analysis, model development, and policy evaluation.",
     },
   ],
 };
