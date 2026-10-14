@@ -29,10 +29,10 @@
       "order": 1,
       "titleZh": "全球PM2.5归因死亡预测",
       "titleEn": "Global PM2.5 mortality projections",
-      "image": "/research/global-pm25-map-2024.jpg",
+      "image": "/research/featured-figure-1.jpg",
       "figure": "Fig. 4",
-      "captionZh": "（SCI 一区 Top，IF=17.694，得到",
-      "captionEn": "(SCI Q1 Top, IF=17.694, featured by",
+      "captionZh": "（SCI 一区 Top，IF=18.1，得到",
+      "captionEn": "(SCI Q1 Top, IF=18.1, featured by",
       "captionUrl": "https://news.ouc.edu.cn/2024/0407/c91a115581/page.htm",
       "captionLinkZh": "学校主页专题报道",
       "captionLinkEn": "the university website",
@@ -63,10 +63,10 @@
       "order": 3,
       "titleZh": "人口老龄化与PM2.5死亡负担",
       "titleEn": "Population aging and PM2.5 mortality",
-      "image": "/research/population-aging-2023.jpg",
+      "image": "/research/featured-figure-3.jpg",
       "figure": "Fig. 1",
-      "captionZh": "（SCI 一区 Top，IF=17.694）",
-      "captionEn": "(SCI Q1 Top, IF=17.694)"
+      "captionZh": "（SCI 一区 Top，IF=18.1）",
+      "captionEn": "(SCI Q1 Top, IF=18.1)"
     }
   },
   {
@@ -77,14 +77,7 @@
     "volume": "70",
     "article": "102899",
     "doi": "10.1016/j.scs.2021.102899",
-    "url": "https://doi.org/10.1016/j.scs.2021.102899",
-    "feature": {
-      "order": 6,
-      "titleZh": "社会生态系统可持续性评估方法",
-      "titleEn": "Social-ecological sustainability assessment",
-      "image": "/research/adaptive-cycle-sustainability-method-2021.jpg",
-      "figure": "Fig. 2"
-    }
+    "url": "https://doi.org/10.1016/j.scs.2021.102899"
   },
   {
     "year": "2020",
@@ -99,10 +92,10 @@
       "order": 2,
       "titleZh": "中国PM2.5治理健康效益",
       "titleEn": "Health benefits of PM2.5 control in China",
-      "image": "/research/china-policy-map-2020.jpg",
+      "image": "/research/featured-figure-2.jpg",
       "figure": "Fig. 2",
-      "captionZh": "（SCI 一区 Top，IF=17.694，ESI 高被引论文，得到科技日报等权威媒体报道）",
-      "captionEn": "(SCI Q1 Top, IF=17.694, ESI Highly Cited Paper, covered by Science and Technology Daily and other authoritative media)"
+      "captionZh": "（SCI 一区 Top，IF=18.1，ESI 高被引论文，得到科技日报等权威媒体报道）",
+      "captionEn": "(SCI Q1 Top, IF=18.1, ESI Highly Cited Paper, covered by Science and Technology Daily and other authoritative media)"
     }
   },
   {
@@ -118,10 +111,10 @@
       "order": 4,
       "titleZh": "全球PM2.5污染景观演变",
       "titleEn": "Global PM2.5 pollution landscape dynamics",
-      "image": "/research/global-pm25-landscape-results-2020.jpg",
+      "image": "/research/featured-figure-4.jpg",
       "figure": "Fig. 2",
-      "captionZh": "（SCI 一区 Top，IF=11.072）",
-      "captionEn": "(SCI Q1 Top, IF=11.072)"
+      "captionZh": "（SCI 一区 Top，IF=10.7）",
+      "captionEn": "(SCI Q1 Top, IF=10.7)"
     }
   },
   {
@@ -132,7 +125,16 @@
     "volume": "115",
     "article": "106385",
     "doi": "10.1016/j.ecolind.2020.106385",
-    "url": "https://doi.org/10.1016/j.ecolind.2020.106385"
+    "url": "https://doi.org/10.1016/j.ecolind.2020.106385",
+    "feature": {
+      "order": 6,
+      "titleZh": "中国城市霾岛强度空间分布",
+      "titleEn": "Spatial distribution of urban haze-island intensity in China",
+      "image": "/research/featured-figure-6.jpg",
+      "figure": "Fig. 6",
+      "captionZh": "（SCI 一区 Top，IF=8.7）",
+      "captionEn": "(SCI Tier 1 Top, IF=8.7)"
+    }
   },
   {
     "year": "2020",
@@ -142,7 +144,16 @@
     "volume": "273",
     "article": "111134",
     "doi": "10.1016/j.jenvman.2020.111134",
-    "url": "https://doi.org/10.1016/j.jenvman.2020.111134"
+    "url": "https://doi.org/10.1016/j.jenvman.2020.111134",
+    "feature": {
+      "order": 5,
+      "titleZh": "城市化与污染排放研究框架",
+      "titleEn": "Urbanization and pollutant emissions research framework",
+      "image": "/research/featured-figure-5.jpg",
+      "figure": "Fig. 2",
+      "captionZh": "（SCI 二区 Top，IF=9.2）",
+      "captionEn": "(SCI Tier 2 Top, IF=9.2)"
+    }
   },
   {
     "year": "2020",
@@ -162,16 +173,7 @@
     "volume": "57",
     "article": "166-176",
     "doi": "10.1016/j.jag.2016.12.016",
-    "url": "https://doi.org/10.1016/j.jag.2016.12.016",
-    "feature": {
-      "order": 5,
-      "titleZh": "BADI沙尘暴遥感识别",
-      "titleEn": "BADI-based dust storm detection",
-      "image": "/research/badi-dust-detection-2017.jpg",
-      "figure": "Fig. 5",
-      "captionZh": "（SCI 一区 Top，IF=7.672）",
-      "captionEn": "(SCI Q1 Top, IF=7.672)"
-    }
+    "url": "https://doi.org/10.1016/j.jag.2016.12.016"
   },
   {
     "year": "2017",
@@ -192,24 +194,6 @@
     "article": "739-750",
     "doi": "10.1016/j.scitotenv.2017.03.037",
     "url": "https://doi.org/10.1016/j.scitotenv.2017.03.037"
-  },
-  {
-    "year": "2015",
-    "authors": "岳桓陛，杨建英，杨阳，史常青，赵平，沈毅",
-    "title": "不同降雨强度条件下植被毯护坡技术的产流特性",
-    "journal": "中国水土保持科学",
-    "volume": "13(1)",
-    "article": "35-41",
-    "url": "https://zgstbckx.xml-journal.net/article/id/10068"
-  },
-  {
-    "year": "2014",
-    "authors": "岳桓陛，杨建英，杨旸，等",
-    "title": "边坡绿化中植被毯技术保水效益评价",
-    "journal": "四川农业大学学报",
-    "volume": "32(1)",
-    "article": "23-27",
-    "url": "https://www.cnki.com.cn/Article/CJFDTOTAL-SCND201401004.htm"
   }
   ]
 }

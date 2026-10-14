@@ -113,7 +113,7 @@ export function HomeContent({ page }: { page: SitePageContent }) {
                   {representativePublications.filter((publication) => publication.year === year).map((publication) => (
                     <li key={publication.url} className="publication-item">
                       <span className="publication-item__number" aria-hidden="true">
-                        [{String(representativePublications.indexOf(publication) + 1).padStart(2, "0")}]
+                        [{String(representativePublications.length - representativePublications.indexOf(publication)).padStart(2, "0")}]
                       </span>
                       <p>
                         <span className="publication-item__authors">
